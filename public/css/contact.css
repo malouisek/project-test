@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVIGATION BAR STARTS */
+a{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    background-color: #fff;
+    padding-left: 35px;
+    padding-right: 45px;
+    margin-top: 3px;
+}
+
+.navbar a.active {
+  background-color: transparent;
+  color: #ff523b;
+  font-weight: 600;
+}
+
+.navbar nav{
+    flex: 1;
+}
+
+.navbar nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+/* BREADCRUMBS */
+
+.breadcrumbs{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a{
+    font-size: 13px;
+}
+
+.breadcrumbs__item{
+    display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after{
+    content: '>';
+    margin: 0 8px;
+    color: #555;
+}
+
+.breadcrumbs__link{
+    text-decoration: none;
+    color: #555;
+}
+
+.breadcrumbs__link:hover{
+    text-decoration: underline;
+}
+
+.breadcrumbs__link--active{
+    color: #ff523b;
+    font-weight: 500;
+}
+
+
+
+/* CONTACT SECTION STARTS */
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 10px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F2EFEF;
+    /* background: url(images/5-1.jpg); */
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 35px;
+    font-weight: 800;
+    color: black;
+}
+
+.contact .content p{
+    font-weight: 400;
+    color: #555;
+}
+
+.container2{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container2 .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container2 .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container2 .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #555;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.container2 .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #ff523b;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+    font-size: 24px;
+    color: #555;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #ff523b;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background: #ff523b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    transition: background 0.5s;
+}
+/* CONTACT SECTION ENDS */
+
+
+
+/* MEDIA QUERIES SECTION  
+ * The media queries below aim to target certain devices width, in order to bring responsiveness.
+ * 
+ * */
+
+@media screen and (max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+       flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navbar a{
+        float:none;
+        width: 100%;
+    }
+}
+
+
+
+/* MAP SECTION STARTS */
+
+.map{
+    display:flex;
+    position: relative;
+    /*min-height: 100vh; */
+    padding: 40px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    position: relative;
+    max-width: 1800px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 2px;
+}
+
+
+/* FOOTER*/
+
+.container-footer{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #F2EFEF;
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #555;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ff523b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #555;
+    text-decoration: none;
+    font-weight: 400;
+    color: #555;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #666;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #C9C8C3;
+    margin-right: 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #555;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #666;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+

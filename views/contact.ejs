@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A3 Design | Online Catalog</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!---------- IMPORTS ---------->
+    <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!---------- NAVBAR ---------->
+<header>
+    <div class="navbar">
+        <a href="index" class="logo"><img src="images/logo.png" width="125px"></a>
+            <nav>
+                <li><a href="index">Home</a> </li>
+                <li><a href="products">Products</a> </li>
+                <li><a href="about">About</a> </li>
+                <li><a class="active" href="contact">Contact</a> </li>
+            </nav>
+        <a href="login">
+        <img src="images/usernew.svg" width="54px" height="22px"> 
+        </a>
+    </div> 
+</header>
+<!---------- BREADCRUMBS ---------->
+    <div class="container-breadcrumbs">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="index" class="breadcrumbs__link">Home</a>
+            </li>
+
+            <li class="breadcrumbs__item">
+                <a href="products" class="breadcrumbs__link breadcrumbs__link--active">Contact</a>
+            </li>
+        </ul>    
+    </div>
+    
+    
+    <!--- Contact --->
+    <section class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <!-- <p>Give us a call or drop as an e-mail.</p> -->
+        </div>
+        <div class="container2">
+            <div class="contactInfo">
+                <!--- Address --->
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>1576 Av. Conselheiro Aguiar<br>Boa Viagem, Recife - PE<br>Brazil 51111-010
+                            </p>
+                        </div>
+                </div>
+                <!--- Phone --->
+                <div class="box">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+55 (81) 3325-2678
+                            </p>
+                    </div>
+                </div>
+                <!--- Email --->
+                <div class="box">
+                    <div class="icon"><i class="far fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>a3design@a3designinteriores.com.br
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <!--- Form starts --->
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="SEND">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <h2>FIND OUR STORE</h2>
+     <!--- MAP --->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d3949.9757614381106!2d-34.888069!3d-8.103950000000001!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0dba252e17%3A0x5ffa47e453d9c97a!2sAv.+Conselheiro+Aguiar%2C+1576+-+Boa+Viagem%2C+Recife+-+PE!5e0!3m2!1spt-BR!2sbr!4v1405037405383" width="980" height="400" frameborder="0" style="border:0"></iframe>
+    </div>
+     
+<!---------- FOOTER ---------->
+   <%- include("partials/footer"); -%>
+    
+</body>
+</html>

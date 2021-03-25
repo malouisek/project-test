@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A3 Design | Online Catalog</title>
+    <link rel="stylesheet" href="css/products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!---------- IMPORTS ---------->
+    <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!---------- NAVIGATION BAR ---------->
+
+<body>
+ <div class="navbar">
+        <a href="index" class="logo"><img src="images/logo.png" width="125px"></a>
+            <nav>
+                <li><a href="index">Home</a> </li>
+                <li><a class="active" href="products">Products</a> </li>
+                <li><a href="about">About</a> </li>
+                <li><a href="contact">Contact</a> </li>
+            </nav>
+        <a href="login">
+        <img src="images/usernew.svg" width="54px" height="22px"> 
+        </a>
+    </div> 
+     
+<!---------- BREADCRUMBS ---------->
+    <div class="container-breadcrumbs">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="index" class="breadcrumbs__link">Home</a>
+            </li>
+
+            <li class="breadcrumbs__item">
+                <a href="products" class="breadcrumbs__link breadcrumbs__link--active">Products</a>
+            </li>
+        </ul>    
+    </div>
+        
+   
+<!---------- ROW 3 - FEATURED PRODUCTS ---------->
+
+<container>
+    <section id="designs" class="samples">
+        <div class="section-text">
+            <br>
+            <br>
+        <h2>SELECT A CATEGORY</h2>
+        <p>Search your favourite products by category</p>
+        <br>
+        </div>
+        <div class="featured">
+            <%productsList.forEach(product => {%><div class="work">
+                <figure>
+                    <img src="<%= product.image %>" alt="">
+                    <figcaption>
+                        <a href="products"><%= product.category %></a>
+                    </figcaption>
+                </figure>
+            </div><%})%>
+        </div>
+    </section>  
+</container>
+
+<!---------- FOOTER ---------->
+     <%- include("partials/footer"); -%>
+
+</body>
+</html>

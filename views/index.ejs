@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">  
+<!---------- HEAD ---------->    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A3 Design | Online Catalog</title>
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!---------- IMPORTS ---------->
+    <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!---------- NAVIGATION BAR ---------->
+    <%- include("partials/header"); -%>
+<!---------- TOP ROW ---------->
+    
+<container>
+    <div class="row">
+        <div class="col-1">
+            <h1>Give your home <br>a new style.</h1>
+            <p> Visit our virtual catalog and buy your favourite products through WhatsApp.</p>
+        <a href="products" class="btn">EXPLORE NOW</a>
+        </div>
+        <div class="col-1">
+        <img src="images/5-31.jpg">
+        </div>
+    </div>
+  
+<!---------- ROW 3 - FEATURED PRODUCTS ---------->
+    
+    <section id="designs" class="samples">
+        <div class="section-text">
+            <br>
+            <br>
+        <h2>FEATURED PRODUCTS</h2>
+        <p>Search your favourite products by categories</p>
+        <br>
+        </div>
+        <div class="featured">
+            <div class="work">
+                <figure>
+                    <img src="images/COLLECTION 2 - ELEMENTS/2.jpg" alt="">
+                    <figcaption>
+                        <a href="products">Wallpaper - Stone Cottage, Grey</a>
+                        <p>R$360,00</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="work">
+                <figure>
+                    <img src="images/5-1.jpg" alt="">
+                    <figcaption>
+                        <a href="products">Wallpaper - Candy Colour, Blue</a>
+                        <p>R$350,00</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="work">
+                <figure>
+                    <img src="images/COLLECTION 1 - NEW UNIQUE/2.jpg" alt="">
+                    <figcaption>
+                        <a href="products.html">Wallpaper - Graphics Mettalic, Grey</a>
+                        <p>R$350,00</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="work">
+                <figure>
+                    <img src="images/4-3.jpg" alt="">
+                    <figcaption>
+                        <a href="products">Wallpaper - Texture, Leaves, Green</a>
+                        <p>R$1.000,00</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        
+<!---------- PROMO BANNER ---------->        
+<main>
+    <section class="section-banner">
+        <div class="product-banner">
+            <div>
+                <img src="images/vangogh.jpg" alt="" width="450px" height="448px">
+            </div>
+            
+            <div class="right">
+                <div class="content">
+                    <h2><span class="discount">NEW</span> </h2>
+                    <h1>
+                    <span>Van Gogh</span>
+                    <span>Wallpaper</span>
+                    </h1><br>
+                    <p>Our brand new collection brings all the <br>passion and creativity from the artist.</p>
+                    <a class="btn" href="#">see more</a>
+                </div>
+            </div>
+        </div>
+    </section>     
+</main>  
+</section>
+</container>   
+    
+<!---------- FOOTER ---------->
+   <%- include("partials/footer"); -%>
+    
+</body>
+</html>

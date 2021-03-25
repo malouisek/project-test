@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A3 Design | Online Catalog</title>
+    <link rel="stylesheet" href="css/faqs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!---------- IMPORTS ---------->
+    <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<!---------- NAVIGATION BAR ---------->
+
+<body>
+ <div class="navbar">
+        <a href="index" class="logo"><img src="images/logo.png" width="125px"></a>
+            <nav>
+                <li><a href="index">Home</a> </li>
+                <li><a href="products">Products</a> </li>
+                <li><a href="about">About</a> </li>
+                <li><a href="contact">Contact</a> </li>
+            </nav>
+        <a href="login">
+        <img src="images/usernew.svg" width="54px" height="22px"> 
+        </a>
+    </div> 
+     
+<!---------- BREADCRUMBS ---------->
+    <div class="container-breadcrumbs">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="index" class="breadcrumbs__link">Home</a>
+            </li>
+
+            <li class="breadcrumbs__item">
+                <a href="products" class="breadcrumbs__link breadcrumbs__link--active">FAQ's</a>
+            </li>
+        </ul>    
+    </div>
+         
+<!---------- FAQS ---------->
+<br>
+    <div class="question">
+        <h2>Frequently Asked Questions<br><br></h2>
+    
+    </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button" id="accordion-button-1">
+                    <span>
+                        What is FAQ?
+                    </span>
+                    <span class="icon">
+                        <img src="images/plus-solid.svg" class="up" id="up1" alt="" width="28px" height="16px">
+                    </span>
+                </button>
+                <div class="accordion-content" id="accordion-content-1">
+                    <p>
+                        AHSUDHAUISHDUAIHSUDHAUHUHEUIHAUIDEAUIHUDIHAUSIDUA. AHSUDIAHSUIDHAUISDIUHAUIDHUAIIUSD. HASUDHASUIDHAUISHDUIAHSDIUA.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button" id="accordion-button-2">
+                    <span>
+                        How can I buy it?
+                    </span>
+                    <span class="icon">
+                        <img src="images/plus-solid.svg" class="up" id="up2" alt="" width="28px" height="16px">
+                    </span>
+                </button>
+                <div class="accordion-content" id="accordion-content-2">
+                    <p>
+                    AHSUDHAUISHDUAIHSUDHAUHUHEUIHAUIDEAUIHUDIHAUSIDUA. AHSUDIAHSUIDHAUISDIUHAUIDHUAIIUSD. HASUDHASUIDHAUISHDUIAHSDIUA.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button" id="accordion-button-3">
+                    <span>
+                        Can I get a refund?
+                    </span>
+                    <span class="icon">
+                        <img src="images/plus-solid.svg" class="up" id="up3" alt="" width="28px" height="16px">
+                    </span>
+                </button>
+                <div class="accordion-content" id="accordion-content-3">
+                    <p>
+                        AHSUDHAUISHDUAIHSUDHAUHUHEUIHAUIDEAUIHUDIHAUSIDUA. AHSUDIAHSUIDHAUISDIUHAUIDHUAIIUSD. HASUDHASUIDHAUISHDUIAHSDIUA.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button" id="accordion-button-4">
+                    <span>
+                        Where is the store?
+                    </span>
+                    <span class="icon">
+                        <img src="images/plus-solid.svg" class="up" id="up4" alt="" width="28px" height="16px">
+                    </span>
+                </button>
+                <div class="accordion-content" id="accordion-content-4">
+                    <p>
+                        AHSUDHAUISHDUAIHSUDHAUHUHEUIHAUIDEAUIHUDIHAUSIDUA. AHSUDIAHSUIDHAUISDIUHAUIDHUAIIUSD. HASUDHASUIDHAUISHDUIAHSDIUA.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+    <script src="/js/faqs.js"></script>
+    
+ <div class="question-2">
+        <h2>Do you still have a question?</h2>
+</div>
+<div class="col-1">
+        <a href="contact" class="btn">CONTACT US</a>
+        </div>
+ <!---------- FOOTER ---------->
+   <%- include("partials/footer"); -%>
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVIGATION BAR STARTS */
+
+a{
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    background-color: #fff;
+    padding-left: 35px;
+    padding-right: 45px;
+    margin-top: 3px;
+}
+
+.navbar a.active {
+  background-color: transparent;
+  color: #ff523b;
+  font-weight: 600;
+}
+
+.navbar nav{
+    flex: 1;   
+}
+
+.navbar nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/* NAVIGATION BAR ENDS */
+
+
+/* ROW 1 STARTS */
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F2EFEF;
+}
+
+.col-1{
+    flex-basis: 35%;
+    min-width: 300px;
+}
+
+.col-1 img{
+    max-width: 90%;
+    padding: 30px 0;
+}
+
+.col-1 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    margin-left: 35px;
+    margin-top: 70px;
+}
+
+.col-1 p{
+    margin-left: 35px;
+    color: #555;
+    font-size: 15px;
+}
+
+.col-1 .btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin: 30px 0;
+    margin-left: 35px;
+    border-radius: 0px;
+    background: #ff523b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+.btn a{
+    color: #555;
+    font-size: 56px;
+}
+
+/* ROW 3 */
+
+.section-text h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+    color: #555;
+}
+
+.section-text p{
+    margin: auto 2.5em;
+    line-height: 1.9em;
+    font-size: 15px;
+    color: #555;
+}
+
+.samples{
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+}
+
+.featured{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-gap: 0.5%;
+    margin: 20px auto;
+    margin-bottom: 60px;
+}
+
+.work{
+    width: 100%;
+    color: black;
+}
+
+.work img{
+    width: 230px;
+    height: 230px;
+    cursor: pointer;
+    max-height: auto;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.work img:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: all ease 0.5s;
+    opacity: 1;
+}
+
+@media all and (max-width: 768px){
+    section div{
+        width: 80%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .story-section,
+    .samples, .featured{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section-text h2{
+        text-align: center;
+    }
+
+    .section-text p{
+        text-align: justify;
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 3vw;
+    }
+
+    .work a{
+        font-size: 18px;
+    }
+
+    #video{
+        width: 80%;
+    }
+}
+
+
+
+/* PRODUCT BANNER*/
+
+.btn {
+  display: inline-block;
+  background-color: #ff523b;
+  padding: 1rem 4rem;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-right: 110px;
+}
+
+.content p{
+  margin-right: 22px;
+  color: #555;
+}
+
+.section-banner{
+    padding: 0rem 0 5rem 0;
+}
+
+.product-banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 28em;
+    background-color: #F2EFEF;
+    padding-left: 35px;
+}
+
+.product-banner .right{
+    align-self: center;
+    text-align: center;
+    padding: 1.6rem;
+}
+
+.product-banner .content h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-right: 16rem;
+}
+
+.product-banner .content .discount{
+    color: #888;
+    font-weight: 400;
+}
+
+.product-banner .content h1 span{
+    color: #555;
+    font-size: 65px;
+    font-weight: 600;
+    display: block;
+    line-height: 1;
+    
+}
+
+@media only screen and (max-width: 996px){
+    .product-banner .content h1 span{
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .product-banner{
+        grid-template-columns: 1fr;
+    }
+    
+    .product-banner .left{
+        display: none;
+    }
+    
+    .product-banner .content h1 span{
+        font-size: 4rem;
+    }
+    
+    .product-banner .content h2{
+        font-size: 2rem;
+    }
+    
+    .product-banner .content a{
+        padding: 1rem 3rem;
+    }
+    
+}
+
+
+
+
+
+
+
+/* DELETAR CASO FOR NECESSARIO. CONTROLA O VÍDEO.
+#video{
+    max-width: -webkit-fill-available;
+    margin: 50px 10px;
+}
+
+
+#video{
+    max-width: -webkit-fill-available;
+    margin: 50px 10px 10px 10px;
+}
+
+*/
+
+/*============*/
+/* FOOTER */
+/*============*/
+
+.container-footer{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #F2EFEF;
+    padding: 70px 0;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #555;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ff523b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #555;
+    text-decoration: none;
+    font-weight: 400;
+    color: #555;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #666;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #C9C8C3;
+    margin-right: 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #555;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #666;
+}
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
