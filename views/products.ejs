@@ -42,15 +42,15 @@
     </div>
         
    
-<!---------- ROW 3 - FEATURED PRODUCTS ---------->
+<!---------- ROW 3 - PRODUCTS ---------->
 
 <container>
     <section id="designs" class="samples">
         <div class="section-text">
             <br>
             <br>
-        <h2>SELECT A CATEGORY</h2>
-        <p>Search your favourite products by category</p>
+        <h2>OUR PRODUCTS</h2>
+        <p>View your favourite products and buy through WhatsApp</p>
         <br>
         </div>
         <div class="featured">
@@ -58,7 +58,9 @@
                 <figure>
                     <img src="<%= product.image %>" alt="">
                     <figcaption>
-                        <a href="products"><%= product.category %></a>
+                        <a href="products"><%= product.name %></a>
+                        <br>
+                        <a href="products"><%= product.price %></a>
                     </figcaption>
                 </figure>
             </div><%})%>

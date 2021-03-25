@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* NAVIGATION BAR STARTS */
+/* NAVIGATION BAR */
 
 a{
     text-decoration: none;
@@ -38,10 +38,7 @@ a{
     margin-right: 30px;
 }
 
-/* NAVIGATION BAR ENDS */
-
-
-/* ROW 1 STARTS */
+/* ROW 1 */
 
 .row{
     display: flex;
@@ -62,24 +59,26 @@ a{
 }
 
 .col-1 h1{
-    font-size: 50px;
+    font-size: 60px;
     line-height: 60px;
     margin: 25px 0;
-    margin-left: 35px;
+    margin-left: 50px;
     margin-top: 70px;
+    margin-right: -140px;
 }
 
 .col-1 p{
-    margin-left: 35px;
+    margin-left: 50px;
+    margin-right: -140px;
     color: #555;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .col-1 .btn{
     display: inline-block;
     padding: 1rem 3rem;
     margin: 30px 0;
-    margin-left: 35px;
+    margin-left: 50px;
     border-radius: 0px;
     background: #ff523b;
     color: #fff;
@@ -99,19 +98,20 @@ a{
     font-size: 56px;
 }
 
-/* ROW 3 */
+/* ROW 3 - FEATURED PRODUCTS*/
 
 .section-text h2{
     text-align: center;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 30px;
     color: #555;
 }
 
 .section-text p{
     margin: auto 2.5em;
     line-height: 1.9em;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 300;
     color: #555;
 }
 
@@ -130,9 +130,23 @@ a{
     margin-bottom: 60px;
 }
 
-.work{
+.work {
     width: 100%;
     color: black;
+}
+
+.work a{
+    width: 100%;
+    color: #555;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.work p{
+    width: 100%;
+    color: #555;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .work img{
@@ -140,7 +154,7 @@ a{
     height: 230px;
     cursor: pointer;
     max-height: auto;
-    border-radius: 20px;
+    border-radius: px;
     opacity: 0.8;
 }
 
@@ -189,99 +203,52 @@ a{
     }
 }
 
+/* VAN GOGH COLLECTION*/
 
-
-/* PRODUCT BANNER*/
-
-.btn {
-  display: inline-block;
-  background-color: #ff523b;
-  padding: 1rem 4rem;
-  color: #fff;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 2rem;
-  margin-right: 110px;
+.image-van img {
+    margin: auto;
+    margin-bottom: -120px;
 }
 
-.content p{
-  margin-right: 22px;
-  color: #555;
+@media only screen and (max-width: 767px){
+    .img {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
 }
 
-.section-banner{
-    padding: 0rem 0 5rem 0;
-}
-
-.product-banner{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 28em;
-    background-color: #F2EFEF;
-    padding-left: 35px;
-}
-
-.product-banner .right{
-    align-self: center;
-    text-align: center;
-    padding: 1.6rem;
-}
-
-.product-banner .content h2{
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    margin-right: 16rem;
-}
-
-.product-banner .content .discount{
-    color: #888;
-    font-weight: 400;
-}
-
-.product-banner .content h1 span{
-    color: #555;
-    font-size: 65px;
-    font-weight: 600;
+.image-van img {
+    max-width: 100%;
     display: block;
-    line-height: 1;
-    
+}
+img {
+    border: 0;
 }
 
-@media only screen and (max-width: 996px){
-    .product-banner .content h1 span{
-        font-size: 5rem;
-    }
+.button-see {
+  background-color: #ff523b;
+  border-radius: 0px;
+  color: white;
+  padding: 1.2rem 6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 680px;
+  margin-top:-140px;
+  font-weight: 100;
+  transition: background 0.5s;
 }
 
-@media only screen and (max-width: 768px){
-    .product-banner{
-        grid-template-columns: 1fr;
-    }
-    
-    .product-banner .left{
-        display: none;
-    }
-    
-    .product-banner .content h1 span{
-        font-size: 4rem;
-    }
-    
-    .product-banner .content h2{
-        font-size: 2rem;
-    }
-    
-    .product-banner .content a{
-        padding: 1rem 3rem;
-    }
-    
+.button-see:hover{
+    background: #563434;
 }
-
-
-
-
-
 
 
 /* DELETAR CASO FOR NECESSARIO. CONTROLA O VÍDEO.
@@ -298,9 +265,96 @@ a{
 
 */
 
-/*============*/
+
+
+/* INSTAGRAM POSTS*/
+
+.section-insta h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    color: #555;
+}
+
+.section-insta p{
+    margin: auto 2.5em;
+    line-height: 1.9em;
+    font-size: 20px;
+    font-weight: 300;
+    color: #555;
+}
+
+.instagram{
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    margin-top:30px;
+}
+
+.photos{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-gap: 0.5%;
+    margin: auto;
+}
+
+.post {
+    width: 100%;
+    color: black;
+}
+
+.post img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    max-height: auto;
+    border-radius: px;
+    opacity: 0.8;
+}
+
+.post img:hover{
+    cursor: pointer;
+    transform: translateY(-15px);
+    transition: all ease 0.5s;
+    opacity: 1;
+}
+
+
+
+@media all and (max-width: 768px){
+    section div{
+        width: 80%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .story-section,
+    .instagram, .photos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photos{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section-insta h2{
+        text-align: center;
+    }
+
+    .section-insta p{
+        text-align: justify;
+        margin-right: 10%;
+        margin-left: 10%;
+        font-size: 3vw;
+    }
+}
+
+
 /* FOOTER */
-/*============*/
+
 
 .container-footer{
     max-width: 1170px;
@@ -397,12 +451,3 @@ ul{
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-

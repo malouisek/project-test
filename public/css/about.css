@@ -121,7 +121,7 @@ section div{
 .question-story h2{
     margin: 40px auto -40px;
     color: black;
-    font-size: 35px;
+    font-size: 45px;
     font-weight:800;
 }
 
@@ -145,7 +145,7 @@ section div{
 /* MEET THE TEAM SECTION STARTS*/
 
 .team-section{
-    background: #f1f1f1;
+    background: white;
     text-align: center;
 }
 
@@ -155,20 +155,21 @@ section div{
     padding: 40px;
     color: #555;
     overflow: hidden;
+    background-color: #666;
 }
 
 .team-section h1{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 400;
     display: inline-block;
-    /* border-bottom: 1.5px solid; */
     padding-bottom: 40px 0;
     padding-top: 20px 0;
-
+    color: white;
+    letter-spacing: 2px;
 }
 
 .team-section h2{
-    font: 15px;
+    font: 1px;
     font-weight: 200;
     color: #ff523b;
     visibility: hidden;
@@ -180,24 +181,34 @@ section div{
     overflow: hidden;
     padding: 40px 0;
     transition: 00.4s;
+    margin-top: -20px;
 }
 
 .pe:hover{
-    background: #ddd;
+    background: #999;
 }
 
 .pe img{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
+    border-radius: 180px;
 }
 
 .p-name{
-    margin: 16px 0;
+    margin: 10px ;
     text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .p-des{
-    color: #ff523b;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: -8px;
 }
 
 .p-sm{
@@ -217,7 +228,7 @@ section div{
 }
 
 .p-sm a i{
-    color:#333;
+    color:white;
     line-height: 30px;
 }
 
@@ -328,58 +339,15 @@ ul{
 }
 
 
+/* MEDIA QUERIES*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TESTES - SECAO BREADCRUMBS*/
-/* DESCOBRIR SE É NECESSARIO DEIXAR ESSE CODIGO OU NAO*/
-
-
-@media (max-width: 991px)
+@media (max-width: 991px){
 .container {
     width: 100%;
 }
-@media (max-width: 1199px)
+}
+
+@media (max-width: 1199px){
 .container {
     width: 100%;
 }
@@ -393,12 +361,5 @@ ul{
     margin-right: auto;
     margin-left: auto;
 }
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
-user agent stylesheet
-div {
-    display: block;
-}
+

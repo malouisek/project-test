@@ -41,57 +41,6 @@ body{
     margin-right: 30px;
 }
 
-/* NAVIGATION BAR ENDS */
-
-
-/* TOP ROW */
-p{
-    color: #555;
-    font-size: 15px;
-}
-
-.row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #F2EFEF;
-}
-
-.col-2{
-    flex-basis: 35%;
-    min-width: 300px;
-}
-
-.col-2 img{
-    max-width: 90%;
-    padding: 30px 0;
-}
-
-.col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-
-.btn{
-    display: inline-block;
-    background: #ff523b;
-    color: #fff;
-    padding: 8px 50px;
-    margin: 30px 0;
-    border-radius: 0px;
-    transition: background 0.5s;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 100;
-}
-
-.btn:hover{
-    background: #563434;
-}
-
-
 /* BREADCRUMBS */
 
 .breadcrumbs{
@@ -125,28 +74,20 @@ p{
 }
 
 
-
-/* ROW 3 */
-
-/* IGUAL. APAGAR CASO FOR NECESSARIO
-.section-text h2{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 500;
-    color: black;
-}
-*/
+/* ROW 3 - PRODUCTS*/
 
 .section-text h2{
     text-align: center;
     font-weight: 400;
-    color: #555;
+    font-size: 30px;
+    color: black;
 }
 
 .section-text p{
     margin: auto 2.5em;
     line-height: 1.9em;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 300;
     color: #555;
 }
 
@@ -159,25 +100,39 @@ p{
 .featured{
     width: 90%;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-gap: 5%;
-    margin: 20px auto;
-    margin-bottom: 200px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-gap: 0.1%;
+    margin: 50px auto;
+    margin-bottom: 60px;
 }
 
-.work{
+.work {
     width: 100%;
     color: black;
-    
+}
+
+.work a{
+    width: 100%;
+    color: #555;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration-line: none;
+}
+
+.work p{
+    width: 100%;
+    color: #555;
+    font-weight: 500;
+    font-size: 15px;
 }
 
 .work img{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     cursor: pointer;
     max-height: auto;
-    border-radius: 20px;
-    opacity: 0.8;
+    border-radius: px;
+    opacity: 0.9;
 }
 
 .work img:hover{
@@ -187,7 +142,6 @@ p{
     opacity: 1;
 }
 
-/* RESPONSIVE */
 @media all and (max-width: 768px){
     section div{
         width: 80%;
@@ -222,8 +176,6 @@ p{
     }
 
 }
-
-
 
 
 
