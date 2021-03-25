@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 // making a connection to mongoDB
-mongoose.connect('mongodb+srv://admin:<admin>@cluster0.vhgy3.mongodb.net/productsDB?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://admin:admin@cluster0.vhgy3.mongodb.net/productsDB?retryWrites=true&w=majority');
 
 //creating a product Model
 const productsSchema = {
