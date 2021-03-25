@@ -15,7 +15,7 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0.vhgy3.mongodb.net/productsD
 
 //creating a product Model
 const productsSchema = {
-    type: String,
+    name: String,
     description: String,
     image: String,
     category: String,
@@ -60,6 +60,9 @@ app.get('/login', (req, res) => {
     res.render('login');
 })
 
+app.get('/productView', (req, res) => {
+    res.render('productView');
+})
 
 app.listen(8000, function () {
     console.log('server is running');
