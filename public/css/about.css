@@ -147,9 +147,7 @@ section div{
     line-height: 1.9em;
     font-size: 15px;
     color: #555;
-    
 }
-
 
 /* MEET THE TEAM SECTION STARTS*/
 
@@ -164,7 +162,7 @@ section div{
     padding: 40px;
     color: #555;
     overflow: hidden;
-    background-color: #F2EFEF;
+    background-color: #F9F9F9;
 }
 
 .team-section h1{
