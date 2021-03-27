@@ -10,6 +10,15 @@ body{
     flex-direction: column;
 }
 
+/* HR LINES */
+
+.hr1 {
+    height: 1px;
+    background: #F2EFEF;
+    width: 100%;
+    font-size: 3px; /* IE 6 */
+}
+
 /* NAVIGATION BAR STARTS */
 .navbar a{
     text-decoration: none;
@@ -49,7 +58,7 @@ body{
     padding-left: 70px;
     padding-top: 10px;
     font-size: 13px;
-    background-color: #F2EFEF;
+    background-color: white;
     padding-bottom: 10px;
 }
 
@@ -120,9 +129,9 @@ section div{
 
 .question-story h2{
     margin: 40px auto -40px;
-    color: black;
     font-size: 45px;
-    font-weight:600;
+    font-weight: 800;
+    color: black;
 }
 
 .story-section{

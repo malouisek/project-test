@@ -9,6 +9,8 @@ body{
     line-height: 1.5;
 }
 
+
+
 /* NAVIGATION BAR */
 .navbar a{
     text-decoration: none;
@@ -75,6 +77,40 @@ body{
 
 
 /* ROW 3 - PRODUCTS*/
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid white;
+  float: left;
+  width: 80%;
+  background: #E8E8E8;
+  border-radius: 2px;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #ff523b;
+  color: white;
+  font-size: 17px;
+  border: 1px solid white;
+  border-left: none;
+  cursor: pointer;
+  opacity: 90%;
+}
+
+form.example button:hover {
+  background: #999;
+  opacity: 90%;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 .section-text h2{
     text-align: center;
@@ -177,7 +213,9 @@ body{
 
 }
 
-
+.checked {
+  color: orange;
+}
 
 /* FOOTER*/
 
