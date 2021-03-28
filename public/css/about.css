@@ -49,7 +49,6 @@ body{
 .navbar nav li{
     display: inline-block;
     margin-right: 30px;
-
 }
 
 /* BREADCRUMBS */
@@ -85,10 +84,6 @@ body{
     color: #ff523b;
     font-weight: 500;
 }
-
-
-
-
 
 /* ABOUT US */
 
@@ -149,19 +144,7 @@ section{
         height: 300px;
         margin-top: 20px;
     }
-    
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* IMAGE GALLERY */
 
@@ -181,19 +164,16 @@ section{
   padding-bottom: 40px;
 }
 
-
 .column {
   float: right;
   width: 25%;
 }
-
 
 @media (max-width: 991px){
   
 .row-images .column{
         position: relative;
         width: 70%;
-
     }
     
 .row-images .column .img{
@@ -201,12 +181,6 @@ section{
         margin-top: 20px;
     }    
 }
-
-
-
-
-
-
 
 /* The Modal (background) */
 .modal {
