@@ -26,9 +26,9 @@
         </a>
     </div> 
      <div class="hr1"></div>
-   
 
 <!---------- BREADCRUMBS ---------->
+
     <div class="container-breadcrumbs">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
@@ -42,18 +42,13 @@
     </div>
       <div class="hr1"></div>
     
-<!---------- ABOUT US SECTION ---------->
+<!---------- ABOUT US ---------->   
     
-    <main> 
-         <div class="question-story">
-        <h2>ABOUT US<br><br></h2>
-    
-    </div>
-    <div class="container">
-        <section id="story" class="story-section">
-        <div class="section-text">
-            <p>
-            <br>For the past 15 years, A3 Design has gained the public`s eye for the high-quality products and great customer experience.
+<section class="about" id="about">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titleText">About Us</h2>
+            <p><br>For the past 15 years, A3 Design has gained the public`s eye for the high-quality products and great customer experience.
             <br>
             <br>
             
@@ -64,17 +59,122 @@
             Porsche, Karim Rachid and our favourite, the Van Gogh inspired collection.
             <br>
             <br>We can`t wait for your next visit!<br><br>
-            </p> 
+            </p>
         </div>
-
-<!---------- IMAGE SECTION ----------> 
-        <div class="box-feature">
-            <img src="images/_DSC0906%20(1).JPG" alt="">    
-        </div>  
-        </section> 
+        <div class="col50">
+            <div class="imgBx">
+                <img src="images/store2.JPG">
+            </div>
+        </div>
     </div>
-    </main>
+</section>
+    
+    
+    
+    
+    
+    <!---------- IMAGE GALLERY ---------->
+    
+<div class="row-images">
+  <div class="column">
+    <img src="images/store1.JPG" style="width:100%" onclick="openModal();currentSlide(1)" class="image-hover cursor">
+  </div>
+  <div class="column">
+    <img src="images/store2.JPG" style="width:100%" onclick="openModal();currentSlide(2)" class="image-hover cursor">
+  </div>
+  <div class="column">
+    <img src="images/store3.JPG"  style="width:100%" onclick="openModal();currentSlide(3)" class="image-hover cursor">
+  </div>
+  <div class="column">
+    <img src="images/store4.JPG"  style="width:100%" onclick="openModal();currentSlide(4)" class="image-hover cursor">
+  </div>
+</div>
 
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/store1.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/store2.JPG" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/store3.JPG" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/store4.JPG" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/store1.JPG" style="width:100%" onclick="currentSlide(1)" alt="Front Display">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/store2.JPG" style="width:100%" onclick="currentSlide(2)" alt="Store Front View">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/store3.JPG" style="width:100%" onclick="currentSlide(3)" alt="Inside View - Inspiration Wall">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/store4.JPG" style="width:100%" onclick="currentSlide(4)" alt="Inside View">
+    </div>
+  </div>
+</div>
+<br>
+    
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script> 
 <!---------- MEET THE TEAM ---------->
     <div class="team-section">
         <div class="inner-width">
