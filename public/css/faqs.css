@@ -103,6 +103,164 @@ body{
 }
 
 
+/* FAQ */
+
+.container-1{
+    background-color: white;
+}
+
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question h2{
+    margin: 40px auto -40px;
+    color: black;
+    font-size: 38px;
+    font-weight:800;
+}
+
+.accordion{
+    margin: 0 auto;
+    padding: 64px;
+    width: 768px;
+}
+
+
+.accordion-item{
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.accordion-item button{
+    position: relative;
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+.accordion-item button:hover{
+    cursor: pointer;
+    color: #ff523b;
+}
+
+.accordion-content p{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.accordion-button{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+/*
+.rotate{
+    transition: 0.6s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+
+}
+*/
+
+@media (max-width: 767px){
+    html, body{
+        overflow-x: hidden !important;
+    }
+
+    body{
+        margin: 0px !important;
+        align-items: center;
+    }
+
+    .accordion{
+        width: 100%;
+    }
+
+    .question h2{
+        width: 90%;
+    }
+    
+    .col-1 .btn{
+        width: 90%;
+    }
+}
+
+/* QUESTIONS */
+
+.container-2{
+    background-color: #F2EFEF;
+    margin-bottom: 20px;
+}
+
+.query{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.query h2{
+    margin: 40px auto ;
+    color: black;
+    font-size: 35px;
+    font-weight:800;
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+
+.how-text{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-1 .btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin: 30px 0;
+    margin-top: -30px;
+    margin-left: 520px;
+    margin-bottom: 60px;
+    border-radius: 0px;
+    background: #ff523b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    transition: background 0.5s;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+.btn a{
+    color: #555;
+    font-size: 56px;
+}
+
+@media (max-width: 767px){
+    /* .container-2{
+     MAKE IT RESPONSIVE
+    }*/
+}
+
+
 /* FOOTER */
 
 .container-footer{
@@ -201,131 +359,4 @@ ul{
     }
 }
 
-
-/* FAQ */
-
-.question{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.question h2{
-    margin: 40px auto -40px;
-    color: black;
-    font-size: 28px;
-    font-weight:800;
-}
-
-.accordion{
-    margin: 0 auto;
-    padding: 64px;
-    width: 768px;
-}
-
-.accordion-item{
-    border-bottom: 2px solid #e5e5e5;
-}
-
-.accordion-item button{
-    position: relative;
-    text-align: left;
-    display: block;
-    width: 100%;
-    padding: 1em 0;
-    color: #555;
-    font-size: 18px;
-    font-weight: 400;
-    border: none;
-    outline: none;
-    background-color: #fff;
-}
-
-.accordion-item button:hover{
-    cursor: pointer;
-    color: #ff523b;
-}
-
-.accordion-content p{
-    font-size: 15px;
-    padding-bottom: 20px;
-}
-
-.accordion-button{
-    display: flex !important;
-    justify-content: space-between !important;
-}
-
-.rotate{
-    transition: 0.6s;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-
-}
-
-@media (max-width: 767px){
-    html, body{
-        overflow-x: hidden !important;
-    }
-
-    body{
-        margin: 0px !important;
-        align-items: center;
-    }
-
-    .accordion{
-        width: 100%;
-    }
-
-    .question h3{
-        width: 90%;
-    }
-    
-    .col-1 .btn{
-        width: 90%;
-    }
-}
-
-.question-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.question-2 h2{
-    margin: 40px auto ;
-    color: black;
-    font-size: 24px;
-    font-weight:800;
-}
-
-.col-1 .btn{
-    display: inline-block;
-    padding: 1rem 3rem;
-    margin: 30px 0;
-    margin-top: -30px;
-    margin-left: 520px;
-    margin-bottom: 80px;
-    border-radius: 0px;
-    background: #ff523b;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    transition: background 0.5s;
-    text-align: center;
-    text-decoration-line: none;
-}
-
-.btn:hover{
-    background: #563434;
-}
-
-.btn a{
-    color: #555;
-    font-size: 56px;
-}
 
