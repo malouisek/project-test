@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A3 Design | Online Catalog</title>
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/productView.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <!---------- IMPORTS ---------->
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/productView.css">
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <!---------- NAVIGATION BAR ---------->
@@ -29,33 +33,62 @@
     </div> 
      
 <!---------- BREADCRUMBS ---------->
-    <div class="container-breadcrumbs">
+   <div class="container-breadcrumbs">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="index" class="breadcrumbs__link">Home</a>
+                <a href="index.html" class="breadcrumbs__link">Home</a>
             </li>
 
             <li class="breadcrumbs__item">
-                <a href="products" class="breadcrumbs__link breadcrumbs__link--active">Products</a>
+                <a href="products.html" class="breadcrumbs__link ">Products</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="products.html" class="breadcrumbs__link breadcrumbs__link--active">Wallpaper Stone Cottage - Red</a>
             </li>
         </ul>    
-    </div>
+    </div>  
         
-   
-<!---------- ROW 3 - FEATURED PRODUCTS ---------->
-
-<container>
-    <section id="designs" class="samples">
-        <div class="section-text">
-            <br>
-            <br>
-        <h2>SELECT A CATEGORY</h2>
-        <p>Search your favourite products by category</p>
-        <br>
-        </div>
-        <h1>This is a test</h1>
-    </section>  
-</container>
+<!---------- PRODUCTS PAGE ---------->                
+    <main>
+        <div class="container-1">
+              <div class="content-wall">
+                <div class="col-small wallpaper-model">
+                    <p><img src="images/2 - ELEMENTS/1.jpg" width="100" id="img1" alt=""></p>
+                    <p><img src="images/2 - ELEMENTS/ambientes/1-2.jpg" width="100" height="80" id="img2"></p>
+                </div>
+                    <div class="col-img preview">
+                        <img src="images/2 - ELEMENTS/1.jpg" class="img-fluid" id="preview" width="450"  alt="">
+                    </div>
+            </div>
+            <div class="display">
+                <h6>STONE</h6>
+                <br>
+                <h1 class="display-2">Wallpaper Stone Cottage - Red</h1>
+                <div class="favourite">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <br>
+                <h3>Description</h3>
+                <div class="details">
+                    <h5>
+                        <span>Collection: Elements. Roll 0,53x10,05 m, Offset match 64/29 cm, Non-woven / non-woven wallpaper. Color: Coloured, Grey, Red. Decor: Cottage, Deco / Motive, Stone. Room: corridor, kitchen, living room, office, bedroom.</span></h5><br>           
+                </div>
+                    <div class="price">
+                        <h2><span><sup>R$</sup></span>350,00</h2>
+                    </div>
+                
+                 <!---------- Button ----------> 
+                <div class="whats">
+                        <button class="btn"><i class="fab fa-whatsapp"></i>Enquire</button>
+                        <button class="btn-heart"><i class="fa fa-heart"></i></button>
+                </div>  
+            </div>
+    </div>
+</main>   
 
 <!---------- FOOTER ---------->
      <%- include("partials/footer"); -%>
