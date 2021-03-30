@@ -122,9 +122,9 @@ form.example::after {
 .section-text p{
     margin: auto 2.5em;
     line-height: 1.9em;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
-    color: #555;
+    color: #222;
 }
 
 .samples{

@@ -279,6 +279,57 @@ a{
 
 /* COVID INFO */
 
+
+
+/* BUTTON CHAT NOW */
+.whats{
+    margin-top: 20px;
+}
+
+.btn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 4px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  transition: all 250ms linear;
+  text-decoration: none;
+  margin-bottom: 50px;
+  background-color: #ff523b;
+}
+
+.btn i {
+  padding-right: 7px;
+  font-size: 20px;
+}
+
+.btn:hover{
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #563434;
+}
+
+
 .underline:after {
 	content: '';
 	display: block;
@@ -305,22 +356,23 @@ a{
 }
 
 .info h1{
-  color:#555;
+  color:black;
   font-weight: 800;
   font-size: 25px;
 }
 
 .info__title {
-  color: #555;
+  color: #222;
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .info p{
-  color: #555;
+  color: #222;
   font-weight: 400;
   font-size: 18px;
+  margin-top: -15px;
 }
 
 .whatsapp-button a{
@@ -350,14 +402,14 @@ a{
     align-items: center;
 }
 
-h2{
+.find-store h2{
     position: relative;
     max-width: 1800px;
     text-align: center;
     padding-top: 40px;
     font-size: 22px;
-    font-weight: 600;
-    color: #555;
+    font-weight: 400;
+    color: black;
     letter-spacing: 2px;
 }
 
