@@ -62,7 +62,7 @@ app.get('/actionProduct/:category', (req, res) => {
     })
 })
 
-//Pass pages as routes
+//Render pages
 app.get('/about', (req, res) => {
     res.render('about');
 })
@@ -83,6 +83,7 @@ app.get('/exclusive', (req, res) => {
     res.render('exclusive');
 })
 
+//Find product by id and render page
 app.get('/:id', function (req, res) {
     console.log("I am rendering this page as well");
     Product.find({ _id: req.params.id }, function (err, product) {

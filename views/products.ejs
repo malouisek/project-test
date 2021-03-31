@@ -55,9 +55,10 @@
                 <!--- Adding some space --->
                 <br>
                 <br>
-                <h2>OUR PRODUCTS</h2>
+                <h2>Our Products</h2>
                 <p>View your favourite products and buy through WhatsApp</p>
                 <br>
+                
                 <!-- Search FORM !"£!"£!"£"!£!""    -->
                 <form class="example" id="formId" style="margin-left: 875px;max-width:300px">
                     <h6></h6>
@@ -89,6 +90,11 @@
 
             <!--- Request the server to get product information from the database --->
             <div class="featured">
+
+                <style>
+
+                    
+                </style>
                 <%productsList.forEach(product => {%>
                 <div class="work">
                     <figure>
@@ -96,9 +102,9 @@
                         <a href="<%= product.id %>"><img src="<%= product.image %>" alt=""></a>
                          <!--- Add product name and price --->
                         <figcaption>
-                            <a href="products"><%= product.name %></a>
+                            <a href="<%= product.id %>"><%= product.name %></a>
                             <br>
-                            <a href="products"><%= product.price %></a>
+                            <a href="<%= product.id %>"><%= product.price %></a>
                         </figcaption>
 
                         <!--- Add star rating for each product --->
