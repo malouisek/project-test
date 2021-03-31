@@ -75,50 +75,27 @@ a{
 }
 
 .col-1 .btn{
+    display: inline-block;
     padding: 1rem 3rem;
     margin: 30px 0;
     margin-left: 50px;
+    border-radius: 0px;
+    background: #ff523b;
+    color: #fff;
+    cursor: pointer;
     font-size: 15px;
     letter-spacing: 1px;
-    font-weight: 400;
-}
-
-.btn{
-  position: relative;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2;
-  height: 48px;
-  border-radius: 4px;
-  width: 210px;
-  letter-spacing: 1px;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  background-color: transparent;
-  color: #fff;
-  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
-  transition: all 250ms linear;
-  text-decoration: none;
-  margin-bottom: 50px;
-  background-color: #ff523b;
+    font-weight: 100;
+    transition: background 0.5s;
 }
 
 .btn:hover{
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
-  background-color: #563434;
+    background: #563434;
+}
+
+.btn a{
+    color: #555;
+    font-size: 56px;
 }
 
 /* ROW 3 - FEATURED PRODUCTS*/

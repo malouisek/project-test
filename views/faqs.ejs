@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">  
+<!---------- HEAD ---------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,13 +8,16 @@
     <title>A3 Design | Online Catalog</title>
     <link rel="stylesheet" href="css/faqs.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<!---------- IMPORTS ---------->
+    <!---------- IMPORTS ---------->
+    <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
+    <!--- Adding scripts for Jquery and Javascript files --->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
     <script src="/js/faqs.js"></script>
 </head>
 
 <!---------- NAVIGATION BAR ---------->
+<!--- Adds navbar items such as the logo, links and login icon --->
 
 <body>
  <div class="navbar">
@@ -29,52 +33,59 @@
         </a>
     </div> 
      
-<!---------- BREADCRUMBS ---------->
+    <!---------- BREADCRUMBS ---------->
+    <!--- Breadcrumbs will guide the user by showing the hierarchy of the website on the top of the page --->
     <div class="container-breadcrumbs">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="index" class="breadcrumbs__link">Home</a>
             </li>
-
+            <!--- Present the name of the page the user is at this moment --->  
             <li class="breadcrumbs__item">
                 <a href="products" class="breadcrumbs__link breadcrumbs__link--active">FAQ's</a>
             </li>
         </ul>    
     </div>
-         
+    <br>    
 <!---------- FAQS ---------->
-<br>
-    
+<!--- Add a container for the divs --->   
 <div class="container-1">
     <div class="question">
         <h2>Frequently Asked Questions<br><br></h2>
     </div>
+    <!--- Add an accordion so whenever the user clicks on the button, the answer to the question appears --->
         <div class="accordion">
+
+            <!--- Question 1 --->
             <div class="accordion-item">
                 <button class="accordion-button" id="accordion-button-1">
                     <span>
                         What do you sell?
                     </span>
+                    <!--- Make the icon "+" a button that when pressed, reveal the answer --->
                     <span class="icon">
                         <img src="/images/plus-solid.svg" class="up" id="up1" alt="" width="28px" height="16px">
                     </span>
                 </button>
-                <div class="accordion-content" id="accordion-content-1">
-                    <p>
-                 At A3 Design you can find a high quality wallapaper, floor covering, curtains and boiseries. There are over 2.000 wallpapers available in stock.
-                    </p>
-                </div>
+                    <!--- Answer 1 --->
+                    <div class="accordion-content" id="accordion-content-1">
+                        <p>
+                    At A3 Design you can find a high quality wallapaper, floor covering, curtains and boiseries. There are over 2.000 wallpapers available in stock.
+                        </p>
+                    </div>
             </div>
-
+            <!--- Question 2 --->
             <div class="accordion-item">
                 <button class="accordion-button" id="accordion-button-2">
                     <span>
                         How can I buy it?
                     </span>
+                    <!--- Make the icon "+" a button that when pressed, reveal the answer --->
                     <span class="icon">
                         <img src="/images/plus-solid.svg" class="up" id="up2" alt="" width="28px" height="16px">
                     </span>
                 </button>
+                <!--- Answer 2 --->
                 <div class="accordion-content" id="accordion-content-2">
                     <p>
                You can either pop in to our local store whenever it suits you or view our product catalog available on this website, select a product and click on the "Enquire on WhatsApp" button. The whole proccess of your purchase can be made online, including ordering, payment and delivery.
@@ -82,15 +93,18 @@
                 </div>
             </div>
             
+            <!--- Question 3 --->
             <div class="accordion-item">
                 <button class="accordion-button" id="accordion-button-3">
                     <span>
                         How does the delivery work?
                     </span>
+                    <!--- Make the icon "+" a button that when pressed, reveal the answer --->
                     <span class="icon">
                         <img src="/images/plus-solid.svg" class="up" id="up3" alt="" width="28px" height="16px">
                     </span>
                 </button>
+                <!--- Answer 3 --->
                 <div class="accordion-content" id="accordion-content-3">
                     <p>
                     Our delivery system works every Friday from 10:00 to 14:00. Make sure to book a slot with one of our consultants right after your order is completed. The fee is calculated according to your address. For fees consultation please contact us by phone or e-mail.
@@ -98,15 +112,18 @@
                 </div>
             </div>
 
+            <!--- Question 4 --->
             <div class="accordion-item">
                 <button class="accordion-button" id="accordion-button-4">
                     <span>
                         If I change my mind, can I get a refund?
                     </span>
+                    <!--- Make the icon "+" a button that when pressed, reveal the answer --->
                     <span class="icon">
                         <img src="/images/plus-solid.svg" class="up" id="up4" alt="" width="28px" height="16px">
                     </span>
                 </button>
+                <!--- Answer 4 --->
                 <div class="accordion-content" id="accordion-content-4">
                     <p>
                   Absolutely! We want to make sure your needs are met and you are happy with your chosen goods. If you change your mind, there is a 30 days policy from which your situation might apply. However, if you think that a product is faulty, you should contact us either by WhatsApp or E-mail. The store is also open from Monday to Saturday, where we can assist you further. 
@@ -114,15 +131,18 @@
                 </div>
             </div>
 
+            <!--- Question 5 --->
             <div class="accordion-item">
                 <button class="accordion-button" id="accordion-button-5">
                     <span>
                         Where is the store?
                     </span>
+                    <!--- Make the icon "+" a button that when pressed, reveal the answer --->
                     <span class="icon">
                         <img src="/images/plus-solid.svg" class="up" id="up5" alt="" width="28px" height="16px">
                     </span>
                 </button>
+                <!--- Answer 5 --->
                 <div class="accordion-content" id="accordion-content-5">
                     <p>
                    The address is the following:
@@ -135,8 +155,8 @@
         </div>
       </div>
     
- <!---------- QUESTIONS AND CONTACT ---------->    
-    
+    <!---------- QUESTIONS AND CONTACT ---------->    
+    <!--- If the user still has a question, click on the button to be taken to the contact page --->  
     <div class="container-2">
         <div class="query">
             <h2>Do you still have a question?</h2>
@@ -144,6 +164,7 @@
         <div class="how-text">
             <p>Send us a message or give us a call.</p>
         </div>
+         <!--- Button --->
         <div class="col-1">
             <a href="contact.html" class="btn">CONTACT US</a>
         </div>
@@ -151,8 +172,9 @@
     <br>
 
       
- <!---------- FOOTER ---------->
-   <%- include("partials/footer"); -%>
+<!---------- FOOTER ---------->
+<!--- Get footer partials --->
+<%- include("partials/footer"); -%>
 
 </body>
 </html>

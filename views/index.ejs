@@ -8,23 +8,26 @@
     <title>A3 Design | Online Catalog</title>
     <link type="text/css" href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<!---------- IMPORTS ---------->
+    <!---------- IMPORTS ---------->
+    <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!---------- NAVIGATION BAR ---------->
+<!--- Adds navbar items such as the logo, links and login icon --->
     <%- include("partials/header"); -%>
-<!---------- TOP ROW ---------->
-    
-<container>
+
+    <!---------- TOP ROW ---------->
+    <!--- Add container to create a banner --->
+    <container>
     <div class="row">
         <div class="col-1">
+            <!--- Add h1 --->
             <h1>Give your home <br>a new style.</h1>
+            <!--- Add paragraph to describe the intention --->
             <p> Visit our virtual catalog and buy your favourite products through WhatsApp.</p>
-       <!---------- Button ----------> 
-                <div class="whats">
-                        <button class="btn">Explore Now</button>
-                </div>
+            <!--- Add button - takes the user to the Product page --->
+            <a href="products" class="btn">EXPLORE NOW</a>
         </div>
         <div class="col-1">
         <img src="images/5-31.jpg">
@@ -33,6 +36,7 @@
     </container>
   
 <!---------- ROW 3 - FEATURED PRODUCTS ---------->
+
 <div class="container">    
 <section id="designs" class="samples">
         <div class="section-text">
@@ -42,38 +46,55 @@
         <p>Search your favourite products</p>
         <br>
         </div>
+
+        <!--- Show featured images --->
         <div class="featured">
+            <!--- Image 1 --->
             <div class="work">
                 <figure>
+                    <!--- Find image location --->
                     <img src="images/11 - VAN GOGH/1.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Stone Cottage, Grey</a>
                         <p>R$360,00</p>
                     </figcaption>
                 </figure>
             </div>
+            
+            <!--- Image 2 --->
             <div class="work">
+                <!--- Find image location --->
                 <figure>
                      <img src="images/6 - STYLE GUIDE NATURLICH/3.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Candy Colour, Blue</a>
                         <p>R$350,00</p>
                     </figcaption>
                 </figure>
             </div>
+
+            <!--- Image 3 --->
             <div class="work">
+                <!--- Find image location --->
                 <figure>
                     <img src="images/6 - STYLE GUIDE NATURLICH/2.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Graphics Mettalic, Grey</a>
                         <p>R$350,00</p>
                     </figcaption>
                 </figure>
             </div>
+
+            <!--- Image 4 --->
             <div class="work">
+                <!--- Find image location --->
                 <figure>
                    <img src="images/6 - STYLE GUIDE NATURLICH/4.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Texture, Leaves, Green</a>
                         <p>R$1.000,00</p>
                     </figcaption>
@@ -83,41 +104,53 @@
             </div>
             
             <!--SECOND ROLL -->
+
+            <!--- Image 5 --->
             <div class="work">
+                <!--- Find image location --->
                 <figure>
-                
                     <img src="images/2 - ELEMENTS/6.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Texture, Leaves, Green</a>
                         <p>R$1.000,00</p>
                     </figcaption>
                 </figure>
             </div>
             
+            <!--- Image 6 --->
             <div class="work">
+                <!--- Find image location --->
                 <figure>
                   <img src="images/2 - ELEMENTS/2.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Texture, Leaves, Green</a>
                         <p>R$1.000,00</p>
                     </figcaption>
                 </figure>
             </div>
             
+            <!--- Image 7 --->
             <div class="work">
+                <!--- Find image location --->
                 <figure>
                    <img src="images/7 - STYLE GUIDE JUNG/1.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Texture, Leaves, Green</a>
                         <p>R$1.000,00</p>
                     </figcaption>
                 </figure>
             </div>
             
+            <!--- Image 8 --->
             <div class="work">
+                <!--- Find image location --->
                 <figure>
                    <img src="images/4 - DANIEL HECHTER/2.jpg" alt="">
                     <figcaption>
+                        <!--- Add price and name --->
                         <a href="products.html">Wallpaper - Texture, Leaves, Green</a>
                         <p>R$1.000,00</p>
                     </figcaption>
@@ -129,17 +162,19 @@
         
                
 <!---------- VAN GOGH ---------->
+<!--- Promo banner that will take the user to the Exclusive collections page--->
 <div class="image-van">
-    <img src="/images/image/Row%202.jpg" data-src="https://www.ilovewallpaper.ie/images/modules/promo_units/1605521330-74102700.jpg" alt="Wood panel" title="Wood panel" class=" lazyloaded">
-    
-    <a href="exclusive.html" class="button-see">SEE MORE</a>
+    <img src="/images/image/Row%202.jpg" data-src="" alt="Wood panel" title="Wood panel" class=" lazyloaded">
+    <!--- Add button --->
+    <a href="exclusive" class="button-see">SEE MORE</a>
 
 </div>
+    <!--- Add space --->
     <br>
     <br>
     
 <!---------- INSTAGRAM POSTS ---------->
-    
+<!--- Show images that when pressed, will take the user to the Instagram profile page --->
     <section id="design" class="instagram">
         <div class="section-insta">
             <br>
@@ -150,57 +185,76 @@
         </div>
         
         <div class="photos">
+
+            <!--- Image 1 --->
             <div class="post">
+                <!--- Add image --->
                 <figure>
                     <img src="images/11 - VAN GOGH/2.jpg" alt="">
                     <figcaption>
+                        <!--- Go to Instagram page --->
                         <a href="products.html"></a>
                     </figcaption>
                 </figure>
             </div>
             
+            <!--- Image 2 --->
             <div class="post">
+                <!--- Add image --->
                 <figure>
                      <img src="images/2 - ELEMENTS/ambientes/5-2.jpg" alt="">
                     <figcaption>
+                        <!--- Go to Instagram page --->
                         <a href="products.html"></a>
                     </figcaption>
                 </figure>
             </div>
+
+            <!--- Image 3 --->
             <div class="post">
+                <!--- Add image --->
                 <figure>
                     <img src="images/2-3.jpg" alt="">
                     <figcaption>
+                        <!--- Go to Instagram page --->
                         <a href="products.html"></a>
                     </figcaption>
                 </figure>
             </div>
+
+            <!--- Image 4 --->
             <div class="post">
+                <!--- Add image --->
                 <figure>
                    <img src="images/3%20-%20NEW%20LIFE/ambientes/1-2.jpg" alt="">
                     <figcaption>
+                        <!--- Go to Instagram page --->
                         <a href="products.html"></a>
                     </figcaption>
                 </figure>
                 <br>
             <br>
             </div>
+
+            <!--- Image 5 --->
             <div class="post">
                 <figure>
                    <img src="images/4%20-%20DANIEL%20HECHTER/ambientes/2-2.jpg" alt="">
                     <figcaption>
+                        <!--- Go to Instagram page --->
                         <a href="products.html"></a>
                     </figcaption>
                 </figure>
                 <br>
             <br>
-            </div>
-            
+            </div>  
         </div>
     </section>
+<!--- Close section --->
     
 <!---------- FOOTER ---------->
-   <%- include("partials/footer"); -%>
+<!--- Get footer partials --->
+<%- include("partials/footer"); -%>
     
 </body>
 </html>

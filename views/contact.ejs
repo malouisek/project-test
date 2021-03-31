@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">  
+<!---------- HEAD ---------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,11 +8,14 @@
     <title>A3 Design | Online Catalog</title>
     <link rel="stylesheet" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<!---------- IMPORTS ---------->
+    <!---------- IMPORTS ---------->
+    <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
 <!---------- NAVIGATION BAR ---------->
+<!--- Adds navbar items such as the logo, links and login icon --->
 <header>
     <div class="navbar">
         <a href="index" class="logo"><img src="images/logo.png" width="125px"></a>
@@ -21,29 +25,29 @@
                 <li><a href="about">About</a> </li>
                 <li><a class="active" href="contact">Contact</a> </li>
             </nav>
-        <a href="login">
+        <a href="login"></a>
         <img src="images/usernew.svg" width="54px" height="22px"> 
         </a>
     </div>
     <div class="hr1"></div>
 </header>
-<!---------- BREADCRUMBS ---------->
+
+    <!---------- BREADCRUMBS ---------->
+    <!--- Breadcrumbs will guide the user by showing the hierarchy of the website on the top of the page --->
     <div class="container-breadcrumbs">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="index" class="breadcrumbs__link">Home</a>
             </li>
-
+            <!--- Present the name of the page the user is at this moment ---> 
             <li class="breadcrumbs__item">
                 <a href="products" class="breadcrumbs__link breadcrumbs__link--active">Contact</a>
             </li>
         </ul>    
     </div>
-    
- 
 
 <!---------- CONTACT ---------->
-
+<!--- Add contact details section --->
     <section class="contact">
     <div class="content">
         <h2>Contact Us</h2>
@@ -82,80 +86,92 @@
             </div>
             
 <!---------- FORM ---------->
+<!--- Add contact form --->
         <div class="contactForm">
                 <form>
+                    <!--- Name input box --->
                     <div class="inputBox">
                         <input type="text" name="" required="required">
                         <span>Full Name</span>
                     </div>
+                    <!--- E-mail input box --->
                     <div class="inputBox">
                         <input type="text" name="" required="required">
                         <span>Email</span>
                     </div>
+                    <!--- Message input box --->
                     <div class="inputBox">
                         <textarea required="required"></textarea>
                         <span>Type your message...</span>
                     </div>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send it">
-                    </div>
+
+                    <!---------- Button ----------> 
+                    <div class="whats">
+                    <button class="btn">Send</button>
+                    </div> 
+
                 </form>
             </div>
         </div>
     </section>
 
-
 <!---------- MAP ---------->
-     <div class="find-store"> <h2>FIND OUR STORE</h2>
+    <!--- Add h2 to this section --->
+    <div class="find-store"> <h2>FIND OUR STORE</h2>
     </div>
+    <!--- Show Googlemaps location --->
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d3949.9757614381106!2d-34.888069!3d-8.103950000000001!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0dba252e17%3A0x5ffa47e453d9c97a!2sAv.+Conselheiro+Aguiar%2C+1576+-+Boa+Viagem%2C+Recife+-+PE!5e0!3m2!1spt-BR!2sbr!4v1405037405383" width="980" height="400" frameborder="0" style="border:0"></iframe>
     </div>
     
 <!---------- MAP ---------->
 
-
 <!---------- COVID INFO---------->  
-
+<!--- Add a section to advise the customer to order their products online --->
 <div class="layout__main">
         <br>
         <section class="info">
-            <!---------- <div class="hr-c"></div>---------->  
-            <br>
-            <br>
+        
+            <br><br>
           <h1>COVID-19 INFO</h1>
-          <span class="underline"></span><br>
+
+          <!--- Creates underline according to the position of the h1 --->
+          <span class="underline"></span>
+          
+          <!--- Create title and description --->
           <h2 class="info__title">
                Due to the current global COVID-19 situation, we understand some of our customers can not attend our local store. <br><br>With this in mind, we are currently accepting WhatsApp orders.<br> If you wish to make an order, message us by clicking on the button below.
-          </h2><br>
+           </h2><br>
             
-        <!-- –– Chat Button ––--> 
-            
-<div class="whatsapp-button"> 
-    <div class="whatsapp-icon">
-        <!---------- Button ----------> 
-                <div class="whats">
-                        <button class="btn"><i class="fab fa-whatsapp"></i>Chat Now</button>
+                <!--- Chat Button --->  
+                <div class="whatsapp-button">
+                    <!--- Add WhatsApp image to the button --->
+                    <button class="btn"><i class="fab fa-whatsapp"></i>Chat Now</button>
                 </div> 
-        <p>
-        Monday - Friday<br>
-        10:00am - 6:00pm<br>
-        <br>
-        </p>
-    </div>
- 
-</div> 
+           
+                <!--- Add paragraph to display Opening hours --->
+                <div class="opening">
+                <p>
+                Monday - Friday<br>
+                10:00am - 6:00pm<br>
+                <br>
+                </p>
+                </div>
+
+            </section>
+        </div> 
 </section>
+<!--- Close section --->
 </div>
-<!---------- <div class="hr-c"></div>---------->  
-<br><br>
+<br>
+<br>
 
 
-<!---------- COVID INFO ---------->
-
+<!---------- COVID INFO ----------> 
 
 <!---------- FOOTER ---------->
-   <%- include("partials/footer"); -%>
+<!--- Get footer partials --->
+<%- include("partials/footer"); -%>
     
 </body>
 </html>

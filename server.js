@@ -11,7 +11,7 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 
 // making a connection to mongoDB
-mongoose.connect('mongodb+srv://admin:admin@cluster0.vhgy3.mongodb.net/productsDB?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://admin:admindorset@cluster0.vhgy3.mongodb.net/productsDB?retryWrites=true&w=majority');
 
 //creating a product Model
 const productsSchema = {
@@ -36,14 +36,33 @@ app.get('/index', (req, res) => {
     res.render('index');
 })
 
+//Request to find the product according to the category
 app.get('/products', (req, res) => {
+    let category;
     Product.find({}, function (err, products) {
         res.render('products', {
-            productsList: products
+            category,
+            productsList: products,
+            query: "Hello World"
         })
     })
 })
 
+//Whenever the Search button is pressed, find the product according to the category
+app.get('/actionProduct/:category', (req, res) => {
+    let category,
+        product;
+    Product.find({ "category": { $regex: '.*' + req.params.category + '.*' } }, function (err, products) {
+
+        res.render('actionProduct', {
+            category, product,
+            productsList: products,
+            query: "Hello World"
+        })
+    })
+})
+
+//Pass pages as routes
 app.get('/about', (req, res) => {
     res.render('about');
 })
@@ -60,10 +79,22 @@ app.get('/login', (req, res) => {
     res.render('login');
 })
 
-app.get('/productView', (req, res) => {
-    res.render('productView');
+app.get('/exclusive', (req, res) => {
+    res.render('exclusive');
 })
 
+app.get('/:id', function (req, res) {
+    console.log("I am rendering this page as well");
+    Product.find({ _id: req.params.id }, function (err, product) {
+        res.render('productView', { product: product });
+    });
+})
+
+app.get('/', function (req, res) {
+    res.render('actionProduct', { query: "Hello World" })
+});
+
+//Echo message so we know the server is working fine
 app.listen(8000, function () {
     console.log('server is running');
 })

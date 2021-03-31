@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">  
+<!---------- HEAD ---------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,12 +8,14 @@
     <title>A3 Design | Online Catalog</title>
     <link rel="stylesheet" href="css/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<!---------- IMPORTS ---------->
+    <!---------- IMPORTS ---------->
+    <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
 <!---------- NAVIGATION BAR ---------->
-    
+<!--- Adds navbar items such as the logo, links and login icon --->
  <div class="navbar">
         <a href="index" class="logo"><img src="../images/logo.png" width="125px"></a>
             <nav>
@@ -27,14 +30,14 @@
     </div> 
      <div class="hr1"></div>
 
-<!---------- BREADCRUMBS ---------->
-
+    <!---------- BREADCRUMBS ---------->
+    <!--- Breadcrumbs will guide the user by showing the hierarchy of the website on the top of the page --->
     <div class="container-breadcrumbs">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="index" class="breadcrumbs__link">Home</a>
             </li>
-
+            <!--- Present the name of the page the user is at this moment ---> 
             <li class="breadcrumbs__item">
                 <a href="products" class="breadcrumbs__link breadcrumbs__link--active">About</a>
             </li>
@@ -43,15 +46,15 @@
       <div class="hr1"></div>
     
 <!---------- ABOUT US ---------->   
-    
+<!--- Create a section --->  
 <section class="about" id="about">
     <div class="row">
         <div class="col50">
             <h2 class="titleText">About Us</h2>
+            <!--- Our Story - Paragraph --->
             <p><br>For the past 15 years, A3 Design has gained the public`s eye for the high-quality products and great customer experience.
             <br>
             <br>
-            
             We understand that choosing a wallpaper can be quite the journey, especially when there are so many options available. 
             That`s where the sales team can guide you and make sure you get exactly what you dreamed of.
             <br>
@@ -61,6 +64,7 @@
             <br>We can`t wait for your next visit!<br><br>
             </p>
         </div>
+        <!--- Create a div to add the image --->
         <div class="col50">
             <div class="imgBx">
                 <img src="images/STORE/store2.jpg">
@@ -70,46 +74,56 @@
 </section>
         
     <!---------- IMAGE GALLERY ---------->
-    
-<div class="row-images">
-  <div class="column">
-    <img src="images/STORE/store1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="image-hover cursor">
-  </div>
-  <div class="column">
-    <img src="images/STORE/store2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="image-hover cursor">
-  </div>
-  <div class="column">
-    <img src="images/STORE/store3.jpg"  style="width:100%" onclick="openModal();currentSlide(3)" class="image-hover cursor">
-  </div>
-  <div class="column">
-    <img src="images/STORE/store4.jpg"  style="width:100%" onclick="openModal();currentSlide(4)" class="image-hover cursor">
-  </div>
-</div>
+    <!--- Create an image gallery to show another images under the main image from Section --->
+    <div class="row-images">
 
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
+    <!--- Add each image column --->
+    <div class="column">
+        <img src="images/STORE/store1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="image-hover cursor">
+    </div>
+     <!--- Add each image column --->
+    <div class="column">
+        <img src="images/STORE/store2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="image-hover cursor">
+    </div>
+     <!--- Add each image column --->
+    <div class="column">
+        <img src="images/STORE/store3.jpg"  style="width:100%" onclick="openModal();currentSlide(3)" class="image-hover cursor">
+    </div>
+     <!--- Add each image column --->
+    <div class="column">
+        <img src="images/STORE/store4.jpg"  style="width:100%" onclick="openModal();currentSlide(4)" class="image-hover cursor">
+    </div>
+    </div>
 
+    <!--- Create image modal box --->
+
+    <!--- Close the window when the user clicks on the X button --->
+    <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <!--- Add images to the slide --->
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="images/STORE/store1.jpg" style="width:100%">
+      <img src="images/store1.JPG" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="images/STORE/store2.jpg" style="width:100%">
+      <img src="images/store2.JPG" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="images/STORE/store3.jpg" style="width:100%">
+      <img src="images/store3.JPG" style="width:100%">
     </div>
     
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="images/STORE/store4.jpg" style="width:100%">
+      <img src="images/store4.JPG" style="width:100%">
     </div>
     
+    <!--- If the user clicks on the previous or next buttons, go back to a certain image or forward --->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -117,31 +131,37 @@
       <p id="caption"></p>
     </div>
 
+     <!--- Define images, titles and width --->
     <div class="column">
-      <img class="demo cursor" src="images/STORE/store1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Front Display">
+      <img class="demo cursor" src="images/store1.JPG" style="width:100%" onclick="currentSlide(1)" alt="Front Display">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/STORE/store2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Store Front View">
+      <img class="demo cursor" src="images/store2.JPG" style="width:100%" onclick="currentSlide(2)" alt="Store Front View">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/STORE/store3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Inside View - Inspiration Wall">
+      <img class="demo cursor" src="images/store3.JPG" style="width:100%" onclick="currentSlide(3)" alt="Inside View - Inspiration Wall">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/STORE/store4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Inside View">
+      <img class="demo cursor" src="images/store4.JPG" style="width:100%" onclick="currentSlide(4)" alt="Inside View">
     </div>
   </div>
 </div>
 <br>
     
+<!--- Image modal box Script --->
 <script>
+
+//Open window whenever a photo is clicked by the user
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
+//Close window and don`t display anything
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
+//Create function to catch the index of the slide image
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -153,6 +173,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+//Function gets elements and establishes the length of the slide
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -171,17 +192,20 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script> 
+
 <!---------- MEET THE TEAM ---------->
+<!--- Show team members and their positions --->
     <div class="team-section">
         <div class="inner-width">
             <h1>Our Team</h1>
             <h2>AWESOME LEADERS</h2>
 
-            <!-- TEAM PERSON 1-->
+            <!--- Team person 1 --->
             <div class="pe">
                 <img src="images/TEAM/3.jpg" alt="">
                 <div class="p-name">Marcelo Souza</div>
                 <div class="p-des">Founder</div>
+                <!--- Add social media icons --->
                 <div class="p-sm">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -189,11 +213,12 @@ function showSlides(n) {
                 </div>
             </div>
 
-            <!-- TEAM PERSON 2-->
+            <!--- Team person 2 --->
             <div class="pe">
                 <img src="images/TEAM/2.jpg" alt="">
                 <div class="p-name">Nethe Lima</div>
                 <div class="p-des">Founder</div>
+                <!--- Add social media icons --->
                 <div class="p-sm">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -201,11 +226,12 @@ function showSlides(n) {
                 </div>
             </div>
 
-            <!-- TEAM PERSON 3-->
+            <!--- Team person 3 --->
             <div class="pe">
                 <img src="images/TEAM/1.jpg" alt="">
                 <div class="p-name">Brunna Souza</div>
                 <div class="p-des">Marketing Leader</div>
+                <!--- Add social media icons --->
                 <div class="p-sm">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
@@ -217,9 +243,9 @@ function showSlides(n) {
     <br>
     <br>
      
-     
 <!---------- FOOTER ---------->
-   <%- include("partials/footer"); -%>
+<!--- Get footer partials --->
+<%- include("partials/footer"); -%>
     
 </body>
 </html>

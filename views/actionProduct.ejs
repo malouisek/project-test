@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!---------- HEAD ---------->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,15 +8,14 @@
     <base href="/">
     <title>A3 Design | Online Catalog</title>
     <link rel="stylesheet" href="css/products.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!---------- IMPORTS ---------->
-    <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!---------- NAVIGATION BAR ---------->
-<!--- Adds navbar items such as the logo, links and login icon --->
 
 <body>
     <div class="navbar">
@@ -33,35 +32,33 @@
     </div>
 
     <!---------- BREADCRUMBS ---------->
-    <!--- Breadcrumbs will guide the user by showing the hierarchy of the website on the top of the page --->
     <div class="container-breadcrumbs">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="index" class="breadcrumbs__link">Home</a>
             </li>
-            <!--- Present the name of the page the user is at this moment ---> 
+
             <li class="breadcrumbs__item">
                 <a href="products" class="breadcrumbs__link breadcrumbs__link--active">Products</a>
             </li>
         </ul>
     </div>
 
-    <!---------- PRODUCTS ---------->
-    <!--- Create a container to show all the images and details from the products found on the database --->
+
+    <!---------- ROW 3 - PRODUCTS ---------->
 
     <container>
+
         <section id="designs" class="samples">
             <div class="section-text">
-                <!--- Adding some space --->
                 <br>
                 <br>
                 <h2>OUR PRODUCTS</h2>
                 <p>View your favourite products and buy through WhatsApp</p>
                 <br>
-                <!-- Search FORM !"£!"£!"£"!£!""    -->
                 <form class="example" id="formId" style="margin-left: 875px;max-width:300px">
-                    <h6></h6>
-                    <input type="text" placeholder="Search by capital letter.." name="category" id="category">
+                    <h6>Search by Capital letter..</h6>
+                    <input type="text" placeholder="Search.." name="category" id="category">
 
                     <button id="searchBox" onclick="setLink()"><i class="fa fa-search"></i></button>
                     <script>
@@ -85,28 +82,25 @@
 
 
                 </form>
-            </div>
 
-            <!--- Request the server to get product information from the database --->
+
+            </div>
             <div class="featured">
                 <%productsList.forEach(product => {%>
                 <div class="work">
                     <figure>
-                         <!--- Add product image --->
                         <a href="<%= product.id %>"><img src="<%= product.image %>" alt=""></a>
-                         <!--- Add product name and price --->
                         <figcaption>
                             <a href="products"><%= product.name %></a>
                             <br>
                             <a href="products"><%= product.price %></a>
                         </figcaption>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
 
-                        <!--- Add star rating for each product --->
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
                     </figure>
                     <br>
                 </div><%})%>
@@ -114,11 +108,10 @@
 
         </section>
     </container>
-    <!--- Close container and section --->
 
-<!---------- FOOTER ---------->
-<!--- Get footer partials --->
-<%- include("partials/footer"); -%>
+    <!---------- FOOTER ---------->
+    <%- include("partials/footer"); -%>
 
 </body>
+
 </html>

@@ -203,21 +203,61 @@ a{
     transform: translateY(-20px);
 }
 
-.contactForm .inputBox input[type="submit"]{
-    width: 100px;
-    padding: 10px;
-    border: none;
-    background: #ff523b;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    transition: background 0.5s;
+
+
+.whats{
+    margin-top: 20px;
 }
 
-.contactForm .inputBox input[type="submit"]:hover{
-    background: #563434;
+.btn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 4px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  transition: all 250ms linear;
+  text-decoration: none;
+  margin-bottom: 50px;
+  background-color: #ff523b;
+}
+
+.btn i {
+  padding-right: 7px;
+  font-size: 20px;
+}
+
+.btn:hover{
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #563434;
+}
+
+.whatsapp-button{
+   margin-top: 10px;
+}
+
+.opening p{
+    margin-top: -10px;
 }
 
 /* HR LINES */
@@ -230,13 +270,6 @@ a{
 }
   
 .hr2 {
-    height: 1px;
-    background: #D1CFCF;
-    width: 100%;
-    font-size: 3px; /* IE 6 */
-}
-
-.hr-c {
     height: 1px;
     background: #D1CFCF;
     width: 100%;
@@ -279,57 +312,6 @@ a{
 
 /* COVID INFO */
 
-
-
-/* BUTTON CHAT NOW */
-.whats{
-    margin-top: 20px;
-}
-
-.btn{
-  position: relative;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 2;
-  height: 48px;
-  border-radius: 4px;
-  width: 210px;
-  letter-spacing: 1px;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  background-color: transparent;
-  color: #fff;
-  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
-  transition: all 250ms linear;
-  text-decoration: none;
-  margin-bottom: 50px;
-  background-color: #ff523b;
-}
-
-.btn i {
-  padding-right: 7px;
-  font-size: 20px;
-}
-
-.btn:hover{
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
-  background-color: #563434;
-}
-
-
 .underline:after {
 	content: '';
 	display: block;
@@ -356,23 +338,22 @@ a{
 }
 
 .info h1{
-  color:black;
+  color:#555;
   font-weight: 800;
   font-size: 25px;
 }
 
 .info__title {
-  color: #222;
+  color: #555;
   font-weight: 400;
   font-size: 20px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
 
 .info p{
-  color: #222;
+  color: #555;
   font-weight: 400;
   font-size: 18px;
-  margin-top: -15px;
 }
 
 .whatsapp-button a{
@@ -402,14 +383,14 @@ a{
     align-items: center;
 }
 
-.find-store h2{
+h2{
     position: relative;
     max-width: 1800px;
     text-align: center;
     padding-top: 40px;
     font-size: 22px;
-    font-weight: 400;
-    color: black;
+    font-weight: 600;
+    color: #555;
     letter-spacing: 2px;
 }
 

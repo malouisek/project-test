@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">  
+<!---------- HEAD ---------->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <base href="/">
     <title>A3 Design | Online Catalog</title>
     <link rel="stylesheet" href="css/productView.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<!---------- IMPORTS ---------->
-    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/productView.css">
+    <!---------- IMPORTS ---------->
+    <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <!---------- NAVIGATION BAR ---------->
+<!--- Adds navbar items such as the logo, links and login icon --->
 
 <body>
  <div class="navbar">
@@ -31,67 +31,86 @@
         <img src="images/usernew.svg" width="54px" height="22px"> 
         </a>
     </div> 
-     
-<!---------- BREADCRUMBS ---------->
-   <div class="container-breadcrumbs">
+     <%product.forEach(product => {%>
+
+    <!---------- BREADCRUMBS ---------->
+    <!--- Breadcrumbs will guide the user by showing the hierarchy of the website on the top of the page --->
+    <div class="container-breadcrumbs">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="index.html" class="breadcrumbs__link">Home</a>
+                <a href="index" class="breadcrumbs__link">Home</a>
             </li>
 
             <li class="breadcrumbs__item">
-                <a href="products.html" class="breadcrumbs__link ">Products</a>
+                <a href="products" class="breadcrumbs__link breadcrumbs__link">Products</a>
             </li>
+            <!--- Get product name from database --->
             <li class="breadcrumbs__item">
-                <a href="products.html" class="breadcrumbs__link breadcrumbs__link--active">Wallpaper Stone Cottage - Red</a>
+                <a href="products" class="breadcrumbs__link breadcrumbs__link--active"><%= product.name %></a>
             </li>
         </ul>    
-    </div>  
-        
-<!---------- PRODUCTS PAGE ---------->                
-    <main>
-        <div class="container-1">
-              <div class="content-wall">
-                <div class="col-small wallpaper-model">
-                    <p><img src="images/2 - ELEMENTS/1.jpg" width="100" id="img1" alt=""></p>
-                    <p><img src="images/2 - ELEMENTS/ambientes/1-2.jpg" width="100" height="80" id="img2"></p>
-                </div>
-                    <div class="col-img preview">
-                        <img src="images/2 - ELEMENTS/1.jpg" class="img-fluid" id="preview" width="450"  alt="">
-                    </div>
-            </div>
-            <div class="display">
-                <h6>STONE</h6>
-                <br>
-                <h1 class="display-2">Wallpaper Stone Cottage - Red</h1>
-                <div class="favourite">
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <br>
-                <h3>Description</h3>
-                <div class="details">
-                    <h5>
-                        <span>Collection: Elements. Roll 0,53x10,05 m, Offset match 64/29 cm, Non-woven / non-woven wallpaper. Color: Coloured, Grey, Red. Decor: Cottage, Deco / Motive, Stone. Room: corridor, kitchen, living room, office, bedroom.</span></h5><br>           
-                </div>
-                    <div class="price">
-                        <h2><span><sup>R$</sup></span>350,00</h2>
-                    </div>
-                
-                 <!---------- Button ----------> 
-                <div class="whats">
-                        <button class="btn"><i class="fab fa-whatsapp"></i>Enquire</button>
-                        <button class="btn-heart"><i class="fa fa-heart"></i></button>
-                </div>  
-            </div>
     </div>
-</main>   
+        
+<!---------- PRODUCT VIEW ---------->
+<!--- Create container to store the divs --->
+    <container>
+    <section id="designs" class="samples">
+        <div class="section-text">
+            <br>
+            <br>
+            <h2>SELECT A CATEGORY</h2>
+            <p>Search your favourite products by category</p>
+            <br>
+            </div>
+            <!--- Get product name from the database --->
+            <h1><%= product.name %></h1>
+
+        <!--- Product view --->
+        <div class="featured">
+            <div class="work">
+                <figure>
+                    <!--- Get product image --->
+                    <img src="<%= product.image %>" alt="">
+                    <figcaption>
+                        <!--- Get product name --->
+                        <a href="products"><%= product.name %></a>
+                        <br>
+                        <!--- Get product price --->
+                        <a href="products"><%= product.price %></a>
+                    </figcaption>
+                    <!--- Add star rating for each product --->
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </figure>
+                <!--- Add space --->
+                <br>
+            </div>
+
+        <!--- Get product details --->
+        <div class="row">
+        <div class="col50">
+            <h2>Description</h2>
+            <!--- Get product description from the database --->
+            <p><%= product.description %></p>
+            <br/>
+            <h2>Category</h2>
+            <!--- Get product category from the database --->
+            <p><%= product.category %></p>
+        </div>
+        </div>
+
+<!--- </section> --->
+
+    </section>  
+    </container>
+<%})%>
 
 <!---------- FOOTER ---------->
-     <%- include("partials/footer"); -%>
+<!--- Get footer partials --->
+<%- include("partials/footer"); -%>
 
 </body>
 </html>
