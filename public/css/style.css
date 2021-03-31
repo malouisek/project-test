@@ -71,32 +71,58 @@ a{
     margin-left: 50px;
     margin-right: -140px;
     color: #555;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.col-1 .btn{
-    display: inline-block;
-    padding: 1rem 3rem;
-    margin: 30px 0;
-    margin-left: 50px;
-    border-radius: 0px;
-    background: #ff523b;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    transition: background 0.5s;
+.whats{
+    margin-top: 20px;
+}
+
+.btn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 4px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  background-color: #ff523b;
+  transition: all 250ms linear;
+  text-decoration: none;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.btn i {
+  padding-right: 7px;
+  font-size: 20px;
 }
 
 .btn:hover{
-    background: #563434;
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #563434;
 }
 
-.btn a{
-    color: #555;
-    font-size: 56px;
-}
 
 /* ROW 3 - FEATURED PRODUCTS*/
 
@@ -110,7 +136,7 @@ a{
 .section-text p{
     margin: auto 2.5em;
     line-height: 1.9em;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #555;
 }
@@ -229,41 +255,85 @@ img {
 }
 
 .button-see {
-  background-color: #ff523b;
-  border-radius: 0px;
-  color: white;
-  padding: 1.2rem 6rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  position: relative;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 4px;
+  width: 210px;
   letter-spacing: 1px;
-  margin: 4px 2px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
   cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  transition: all 250ms linear;
+  text-decoration: none;
+  margin-bottom: 50px;
+  background-color: #ff523b; 
   margin-left: 680px;
   margin-top:-140px;
-  font-weight: 100;
-  transition: background 0.5s;
 }
 
 .button-see:hover{
-    background: #563434;
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #563434;
+}
+
+.button-feat {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 1px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  color: #ff523b;
+  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  transition: all 250ms linear;
+  text-decoration: none;
+  margin-bottom: 50px;
+  background-color: transparent; 
+  margin-top:-140px;
+  border: 3px solid #E8E6E6;
+}
+
+.button-feat:hover{
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #563434;
 }
 
 
-/* DELETAR CASO FOR NECESSARIO. CONTROLA O VÍDEO.
-#video{
-    max-width: -webkit-fill-available;
-    margin: 50px 10px;
-}
 
-
-#video{
-    max-width: -webkit-fill-available;
-    margin: 50px 10px 10px 10px;
-}
-
-*/
 
 
 
@@ -279,7 +349,7 @@ img {
 .section-insta p{
     margin: auto 2.5em;
     line-height: 1.9em;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #555;
 }
