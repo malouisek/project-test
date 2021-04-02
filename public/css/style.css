@@ -128,9 +128,9 @@ a{
 
 .section-text h2{
     text-align: center;
-    font-weight: 400;
-    font-size: 30px;
-    color: #555;
+    font-weight: 800;
+    font-size: 35px;
+    color: #333;
 }
 
 .section-text p{
@@ -191,59 +191,11 @@ a{
     opacity: 1;
 }
 
-@media all and (max-width: 768px){
-    section div{
-        width: 80%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-
-    .story-section,
-    .samples, .featured{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .featured{
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .section-text h2{
-        text-align: center;
-    }
-
-    .section-text p{
-        text-align: justify;
-        margin-right: 10%;
-        margin-left: 10%;
-        font-size: 3vw;
-    }
-
-    .work a{
-        font-size: 18px;
-    }
-
-    #video{
-        width: 80%;
-    }
-}
-
 /* VAN GOGH COLLECTION*/
 
 .image-van img {
     margin: auto;
     margin-bottom: -120px;
-}
-
-@media only screen and (max-width: 767px){
-    .img {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    }
 }
 
 .image-van img {
@@ -333,17 +285,13 @@ img {
 }
 
 
-
-
-
-
 /* INSTAGRAM POSTS*/
 
 .section-insta h2{
     text-align: center;
-    font-weight: 400;
-    font-size: 30px;
-    color: #555;
+    font-weight: 800;
+    font-size: 35px;
+    color: #333;
 }
 
 .section-insta p{
@@ -392,35 +340,6 @@ img {
 
 
 
-@media all and (max-width: 768px){
-    section div{
-        width: 80%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-
-    .story-section,
-    .instagram, .photos{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .photos{
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .section-insta h2{
-        text-align: center;
-    }
-
-    .section-insta p{
-        text-align: justify;
-        margin-right: 10%;
-        margin-left: 10%;
-        font-size: 3vw;
-    }
-}
 
 
 /* FOOTER */
@@ -508,7 +427,115 @@ ul{
     background-color: #666;
 }
 
-@media(max-width: 767px){
+
+
+/* MEDIA QUERIES
+*Add media queries to make the website responsive for mobile, phablet and tablet view
+*/
+
+/* Max-Width 991px - Tablet View*/
+@media (max-width: 991px){
+    
+}
+
+/* Max-Width 767px - Phablet View*/
+@media (max-width: 767px){
+
+    /* ROW 1 TOP*/
+    .col-1 h1{
+        font-size: 45px;
+        margin-left: 20px;
+    }
+    
+    .col-1 p{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .col-1 .btn{
+        margin-left: 20px;
+    }
+
+    .col-1 img{
+        width: 70%;
+        margin-left: 60px;
+    }
+
+    /* FEATURED PRODUCTS*/
+
+    .section-text h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section-text p{
+        font-size: 16px;
+        margin-bottom: -80px;
+        text-align: center;
+    }
+
+    .featured{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 4%;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        margin-left: 150px;
+    }
+
+    .button-feat{
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    .work a{
+        font-size: 16px;
+    }
+
+    /* VAN GOGH BANNER */
+
+    .button-see {
+        width: 20%;
+        margin-left: 410px;
+        margin-top: 40px;
+        position: relative;
+        height: 40px;
+        width: 180px;
+    }
+
+    .image-van img{
+        width: 100%;
+    }
+
+    /* INSTAGRAM POSTS */
+
+    .section-insta{
+        margin-top: -80px;
+    }
+
+    .section-insta h2{
+        text-align: center;
+        font-weight: 800;
+        font-size: 35px;
+}
+
+    .section-insta p{
+        font-size: 16px;
+    }
+
+    .photos{
+        align-items: justify;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 4%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        margin-left: 150px;
+    }
+
+    /* FOOTER */
     .footer-col{
         width: 50%;
         padding: 0 15px;
@@ -516,8 +543,14 @@ ul{
     }
 }
 
-@media(max-width: 574px){
+/* Max-Width 500 - Mobile View*/
+@media(max-width: 500px){
     .footer-col{
         width: 100%;
     }
+
+    .col-1 img{
+    display: none;
+    }
 }
+

@@ -96,8 +96,7 @@ a{
 
 .contact .content{
     max-width: 800px;
-    text-align: center;
-    
+    text-align: center;  
 }
 
 .contact .content h2{
@@ -279,37 +278,6 @@ a{
 /* CONTACT SECTION ENDS */
 
 
-
-
-/* MEDIA QUERIES SECTION  
- * The media queries below aim to target certain devices width, in order to bring responsiveness.
- * 
- * */
-
-@media screen and (max-width: 991px)
-{
-    .contact{
-        padding: 50px;
-    }
-    .container{
-       flex-direction: column;
-    }
-    .container .contactInfo{
-        margin-bottom: 40px;
-    }
-    .container .contactInfo{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .navbar a{
-        float:none;
-        width: 100%;
-    }
-}
-
-
 /* COVID INFO */
 
 .underline:after {
@@ -479,18 +447,54 @@ ul{
     background-color: #666;
 }
 
-@media(max-width: 767px){
-    .footer-col{
-        width: 50%;
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
-}
 
-@media(max-width: 574px){
-    .footer-col{
+@media screen and (max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+       flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
         width: 100%;
     }
 }
 
+@media(max-width: 767px)
+{
+    .contact{
+        padding: 1px;
+        padding-bottom: 40px;
+    }
+    .container{
+       flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo{
+        width: 100%;
+    }
+    .underline:after {
+	content: '';
+	display: block;
+	width: 4%;
+	height: 3px;
+    background-color: red;
+    margin-left: 220px;
+    margin-top: 6px;
+    border-radius: 2px;
+}
 
+}
+
+@media screen and (max-width: 600px){
+    .navbar a{
+        float:none;
+        width: 100%;
+    }
+}

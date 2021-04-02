@@ -104,7 +104,7 @@ section{
     width: 48%;
 }
 
-.titleText{
+.titleText h2{
     color: #111;
     font-size: 35px;
     font-weight: 800;
@@ -126,25 +126,7 @@ section{
     object-fit: cover;
 }
 
-@media (max-width: 991px){
-    section {
-    padding: 20px;
-    }
-    /* FAZ O TEXTO FICAR ACIMA DA IMAGEM */
-    .row{
-        flex-direction: column;
-    }
-    /* FAZ A POSICAO DO TEXTO E IMAGEM FICAR NO MEIO DA PAGINA */
-    .row .col50{
-        position: relative;
-        width: 100%;
-    }
-    
-    .row .col50 .imgBx{
-        height: 300px;
-        margin-top: 20px;
-    }
-}
+
 
 /* IMAGE GALLERY */
 
@@ -169,18 +151,7 @@ section{
   width: 25%;
 }
 
-@media (max-width: 991px){
-  
-.row-images .column{
-        position: relative;
-        width: 70%;
-    }
-    
-.row-images .column .img{
-        height: 300px;
-        margin-top: 20px;
-    }    
-}
+
 
 /* The Modal (background) */
 .modal {
@@ -298,11 +269,6 @@ img.image-hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-
-
-
-
 /* MEET THE TEAM SECTION STARTS*/
 
 .team-section{
@@ -390,14 +356,6 @@ img.image-hover {
     line-height: 30px;
 }
 
-/* RESPONSIVE DESIGN*/
-@media screen and (max-width:600px){
-    .pe{
-        width: 100%;
-    }
-}
-
-
 /* FOOTER*/
 
 .container-footer{
@@ -482,28 +440,11 @@ ul{
     background-color: #666;
 }
 
-@media(max-width: 767px){
-    .footer-col{
-        width: 50%;
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 574px){
-    .footer-col{
-        width: 100%;
-    }
-}
 
 
-/* MEDIA QUERIES*/
-
-@media (max-width: 991px){
-.container {
-    width: 100%;
-}
-}
+/* MEDIA QUERIES
+*Add media queries to make the website responsive for mobile, phablet and tablet view
+*/
 
 @media (max-width: 1199px){
 .container {
@@ -520,4 +461,109 @@ ul{
     margin-left: auto;
 }
 }
+
+/* Max-Width 991px - Tablet View*/
+@media (max-width: 991px){
+     
+section {
+    padding: 20px;
+    }
+    /* FAZ O TEXTO FICAR ACIMA DA IMAGEM */
+    .row{
+        flex-direction: column;
+    }
+    /* FAZ A POSICAO DO TEXTO E IMAGEM FICAR NO MEIO DA PAGINA */
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+
+.container {
+    width: 100%;
+}
+
+.row-images .column{
+        position: relative;
+        width: 70%;
+    }
+    
+.row-images .column .img{
+        height: 300px;
+        margin-top: 20px;
+    }    
+}
+
+
+/* Max-Width 767px - Phablet View*/
+@media (max-width: 767px){
+
+    /* ABOUT US SECTION*/
+    .row{
+        width: 80%;
+        align-items: center;
+        margin-left: 70px !important;
+    }
+
+    .titleText {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    
+    .titleText .p {
+        text-align: center;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .row-images{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 1%;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        margin-left: 120px;
+    }
+
+    /* OUR TEAM */
+
+    .pe{
+        align-items: center;
+        width: 80%;
+        margin-left: 60px
+    }
+
+    /* FOOTER */
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .pe{
+        width: 100%;
+    }
+}
+
+/* Max-Width 500 - Mobile View*/
+@media(max-width: 800px){
+    .footer-col{
+        width: 100%;
+    }
+
+    .col-1 img{
+    display: none;
+    }
+}
+
+
+
 

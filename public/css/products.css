@@ -176,41 +176,6 @@ form.example::after {
     opacity: 1;
 }
 
-@media all and (max-width: 768px){
-    section div{
-        width: 80%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-
-    .story-section,
-    .samples, .featured{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .featured{
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .section-text h2{
-        text-align: center;
-    }
-
-    .section-text p{
-        text-align: justify;
-        margin-right: 10%;
-        margin-left: 10%;
-        font-size: 3vw;
-    }
-
-    .work a{
-        font-size: 18px;
-    }
-
-}
-
 .checked {
   color: orange;
 }
@@ -299,23 +264,74 @@ ul{
     background-color: #666;
 }
 
-@media(max-width: 767px){
+
+
+
+
+/* MEDIA QUERIES
+*Add media queries to make the website responsive for mobile, phablet and tablet view
+*/
+
+/* Max-Width 991px - Tablet View*/
+@media (max-width: 991px){
+    
+}
+
+/* Max-Width 767px - Phablet View*/
+@media (max-width: 767px){
+
+    /* PRODUCTS*/
+
+    .section-text h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section-text p{
+        font-size: 16px;
+        margin-bottom: -80px;
+        text-align: center;
+    }
+
+    .featured{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 4%;
+        margin-top: 10px;
+        margin-bottom: 1350px;
+        margin-left: 150px;
+    }
+
+    .button-feat{
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    .work a{
+        font-size: 16px;
+    }
+
+
+    /* FOOTER */
     .footer-col{
         width: 50%;
         padding: 0 15px;
+        margin-top: 10px;
         margin-bottom: 30px;
     }
 }
 
-@media(max-width: 574px){
+/* Max-Width 500 - Mobile View*/
+@media(max-width: 800px){
     .footer-col{
         width: 100%;
     }
+
+    .col-1 img{
+    display: none;
+    }
+    
 }
-
-
-
-
-
 
 

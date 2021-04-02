@@ -75,34 +75,6 @@ body{
     font-weight: 500;
 }
 
-
-/* RESPONSIVE */
-@media all and (max-width: 768px){
-    section div{
-        width: 80%;
-        padding-top: 2em;
-        padding-bottom: 2em;
-    }
-
-    .story-section,
-    .samples{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section-text h2{
-        text-align: center;
-    }
-
-    .section-text p{
-        text-align: justify;
-        margin-right: 10%;
-        margin-left: 10%;
-        font-size: 3vw;
-    }
-}
-
-
 /* FAQ */
 
 .container-1{
@@ -127,7 +99,6 @@ body{
     padding: 64px;
     width: 768px;
 }
-
 
 .accordion-item{
     border-bottom: 2px solid #e5e5e5;
@@ -171,29 +142,6 @@ body{
 
 }
 */
-
-@media (max-width: 767px){
-    html, body{
-        overflow-x: hidden !important;
-    }
-
-    body{
-        margin: 0px !important;
-        align-items: center;
-    }
-
-    .accordion{
-        width: 100%;
-    }
-
-    .question h2{
-        width: 90%;
-    }
-    
-    .col-1 .btn{
-        width: 90%;
-    }
-}
 
 /* QUESTIONS */
 
@@ -244,8 +192,6 @@ body{
     text-align: center;
     text-decoration-line: none;
 }
-
-
 */
 
 .whats{
@@ -291,13 +237,6 @@ body{
 .btn:hover{
   box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
   background-color: #563434;
-}
-
-
-@media (max-width: 767px){
-    /* .container-2{
-     MAKE IT RESPONSIVE
-    }*/
 }
 
 
@@ -385,13 +324,6 @@ ul{
     background-color: #666;
 }
 
-@media(max-width: 767px){
-    .footer-col{
-        width: 50%;
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
-}
 
 @media(max-width: 574px){
     .footer-col{
@@ -399,4 +331,51 @@ ul{
     }
 }
 
+@media (max-width: 767px){
+    html, body{
+        overflow-x: hidden !important;
+    }
 
+    body{
+        margin: 0px !important;
+        align-items: center;
+    }
+
+    .accordion{
+        width: 100%;
+    }
+
+    .question h2{
+        align-items: center;
+    }
+    
+    .col-1 .btn{
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 767px){
+    /* .container-2{
+     MAKE IT RESPONSIVE
+    }*/
+
+.whats{
+    margin-top: 20px;
+}
+
+.btn{
+    margin: 30px 0;
+    margin-top: -30px;
+    margin-left: 270px;
+    margin-bottom: 60px;
+    position: relative;
+    }
+
+ .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+
+}
