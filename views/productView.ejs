@@ -46,21 +46,18 @@
             </li>
             <!--- Get product name from database --->
             <li class="breadcrumbs__item">
-                <a href="products" class="breadcrumbs__link breadcrumbs__link--active"><%= product.name %></a>
+                <a href="products" class="breadcrumbs__link breadcrumbs__link--active"><%= product.name %>
+                </a>
             </li>
         </ul>    
     </div>
         
 <!---------- PRODUCT VIEW ---------->
 <!--- Create container to store the divs --->
+<main>
     <container>
     <section id="designs" class="samples">
         <div class="section-text">
-            <br>
-            <br>
-            <h2>SELECT A CATEGORY</h2>
-            <p>Search your favourite products by category</p>
-            <br>
             </div>
             <!--- Get product name from the database --->
             <h1><%= product.name %></h1>
@@ -70,7 +67,7 @@
             <div class="work">
                 <figure>
                     <!--- Get product image --->
-                    <img src="<%= product.image %>" alt="">
+                    <img src="<%= product.image %>" width="100px" alt="">
                     <figcaption>
                         <!--- Get product name --->
                         <a href="products"><%= product.name %></a>
@@ -78,12 +75,16 @@
                         <!--- Get product price --->
                         <a href="products"><%= product.price %></a>
                     </figcaption>
+
+                    <div class="rating">
                     <!--- Add star rating for each product --->
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
+                    </div>
+
                 </figure>
                 <!--- Add space --->
                 <br>
@@ -106,6 +107,7 @@
 
     </section>  
     </container>
+    </main>
 <%})%>
 
 <!---------- FOOTER ---------->

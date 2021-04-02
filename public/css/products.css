@@ -76,14 +76,18 @@ body{
 
 /* ROW 3 - PRODUCTS*/
 
+form.example{
+    margin-top: 20px;
+}
+
 form.example input[type=text] {
   padding: 10px;
-  font-size: 17px;
+  font-size: 13px;
   border: 1px solid white;
   float: left;
   width: 80%;
   background: #E8E8E8;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 form.example button {
@@ -92,9 +96,9 @@ form.example button {
   padding: 10px;
   background: #ff523b;
   color: white;
-  font-size: 17px;
+  font-size: 13px;
   border: 1px solid white;
-  border-left: none;
+  border-radius: 4px;
   cursor: pointer;
   opacity: 90%;
 }
@@ -110,19 +114,46 @@ form.example::after {
   display: table;
 }
 
-.section-text h2{
+.section-top{
+    width: 100%;
+    height: 160px;
+    background-color:#f9f9f9;
+}
+
+.section-top h2{
     text-align: center;
     font-weight: 800;
     font-size: 35px;
     color: black;
+    margin-top: -30px;
 }
 
-.section-text p{
-    margin: auto 2.5em;
+.underline:after {
+	content: '';
+	display: block;
+	width: 4%;
+	height: 3.5px;
+    background-color: #ff523b;
+    align-items: center;
+    margin-top: 1px;
+    margin-left: 600px;
+    border-radius: 2px;
+}
+
+.section-top p{
+    margin-top: 10px; 
     line-height: 1.9em;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     color: #333;
+}
+
+.section-text h1{
+    font-size: 16px;
+    color: #333;
+    float: left;
+    margin-left: 90px;
+    margin-top: 10px;
 }
 
 .samples{
@@ -282,12 +313,12 @@ ul{
 
     /* PRODUCTS*/
 
-    .section-text h2{
+    .section-top h2{
         text-align: center;
         font-size: 35px;
     }
 
-    .section-text p{
+    .section-top p{
         font-size: 16px;
         margin-bottom: -80px;
         text-align: center;

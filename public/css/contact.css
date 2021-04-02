@@ -103,7 +103,8 @@ a{
     font-size: 45px;
     font-weight: 800;
     color: black;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
+    letter-spacing: 0px;
 }
 
 .container2{
@@ -114,22 +115,26 @@ a{
     margin-top: 30px;
 }
 
-.container2 .contactInfo{
-    width: 50%;
+.contactInfo{
+    width: 70%;
     display: flex;
     flex-direction: column;
+    margin-left: 60px;
+    margin-top: 50px;
+    
 }
 
-.container2 .contactInfo .box{
+.contactInfo .box{
     position: relative;
     padding: 20px 0;
     display: flex;
+    padding-top: -20px;
 }
 
-.container2 .contactInfo .box .icon{
+.contactInfo .box .icon{
     min-width: 60px;
     height: 60px;
-    background: white;
+    background:#F2EFEF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,24 +142,25 @@ a{
     font-size: 22px;
 }
 
-.container2 .contactInfo .box .text{
+.contactInfo .box .text{
     display: flex;
     margin-left: 20px;
     font-size: 15px;
     color: #555;
     flex-direction: column;
-    font-weight: 400;
+    font-weight: 500;
 }
 
-.container2 .contactInfo .box .text h3{
-    font-weight: 500;
+.contactInfo .box .text h3{
+    font-weight: 800;
     color: #ff523b;
 }
 
 .contactForm{
-    width: 40%;
+    width: 65%;
     padding: 40px;
     background: white;
+    margin-bottom: 0px;
 }
 
 .contactForm h2{
@@ -201,8 +207,6 @@ a{
     font-size: 12px;
     transform: translateY(-20px);
 }
-
-
 
 .whats{
     margin-top: 20px;
@@ -285,14 +289,15 @@ a{
 	display: block;
 	width: 4%;
 	height: 3px;
-    background-color: red;
+    background-color: #ff523b;
     margin-left: 460px;
     margin-top: 6px;
     border-radius: 2px;
 }
 
-.layout__main {
+.layout_main {
   width: 100%;
+  margin-left: 0px;
 }
 
 .info {
@@ -306,22 +311,24 @@ a{
 }
 
 .info h1{
-  color:#555;
+  color:#333;
   font-weight: 800;
-  font-size: 25px;
+  font-size: 35px;
 }
 
-.info__title {
-  color: #555;
+.info_title {
+  color: #444;
   font-weight: 400;
-  font-size: 20px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 0px;
+  margin-top: 30px;
 }
 
 .info p{
-  color: #555;
+  color: #444;
   font-weight: 400;
   font-size: 18px;
+  letter-spacing: 0px;
 }
 
 .whatsapp-button a{
@@ -345,13 +352,18 @@ a{
     display:flex;
     position: relative;
     /*min-height: 100vh; */
-    padding: 40px 100px;
+    width: 55%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 520px;
+    margin-top: -400px;
 }
 
-h2{
+.find-store{
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.find-store h2{
     position: relative;
     max-width: 1800px;
     text-align: center;

@@ -104,7 +104,7 @@ section{
     width: 48%;
 }
 
-.titleText h2{
+.titleText{
     color: #111;
     font-size: 35px;
     font-weight: 800;
@@ -277,7 +277,7 @@ img.image-hover {
 }
 
 .inner-width{
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
     padding: 40px;
     color: #555;
@@ -286,13 +286,25 @@ img.image-hover {
 }
 
 .team-section h1{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 800;
     display: inline-block;
     padding-bottom: 40px 0;
     padding-top: 20px 0;
     color:black;
     letter-spacing: 1px;
+}
+
+.underline:after {
+	content: '';
+	display: block;
+	width: 8%;
+	height: 3.5px;
+    background-color: #ff523b;
+    align-items: center;
+    margin-top: 1px;
+    margin-left: 0px;
+    border-radius: 2px;
 }
 
 .team-section h2{
@@ -309,7 +321,7 @@ img.image-hover {
 }
 
 .pe:hover{
-    background: #999;
+    background: #C9C8C3;
 }
 
 .pe img{
@@ -328,7 +340,7 @@ img.image-hover {
 }
 
 .p-des{
-    color:black;
+    color: #333;
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 16px;
