@@ -55,59 +55,66 @@
 <!---------- PRODUCT VIEW ---------->
 <!--- Create container to store the divs --->
 <main>
-    <container>
-    <section id="designs" class="samples">
-        <div class="section-text">
-            </div>
-            <!--- Get product name from the database --->
-            <h1><%= product.name %></h1>
+    <div class="container-1">
+    <div class="content-wall">
 
         <!--- Product view --->
-        <div class="featured">
-            <div class="work">
-                <figure>
-                    <!--- Get product image --->
-                    <img src="<%= product.image %>" width="100px" alt="">
-                    <figcaption>
-                        <!--- Get product name --->
-                        <a href="products"><%= product.name %></a>
-                        <br>
-                        <!--- Get product price --->
-                        <a href="products"><%= product.price %></a>
-                    </figcaption>
+        <div class="col-img preview">  
+        <!--- Get product image --->
+        <img src="<%= product.image %>" class="img-fluid" id="preview" width="450px" alt="">
+        </div>
 
-                    <div class="rating">
-                    <!--- Add star rating for each product --->
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    </div>
+    </div>
 
-                </figure>
-                <!--- Add space --->
-                <br>
+                    <div class="display">
+                         <!--- Get product category --->
+                        <h6><%= product.category %></h6>
+                        <br />
+                        <h1 class="display-2"><%= product.name %></h1>
+
+                        <!--- Display rating --->
+                        <div class="favourite">
+                        <!--- Add star rating for each product --->
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <br />
+
+                        <!--- Display description --->
+                        <h3>Description</h3>
+                        <div class="details">
+                            <h5>
+                                <span><%= product.description %></span>
+                            </h5>
+                            <br />
+                        </div>
+
+                        <!--- Display price --->
+                        <div class="price">
+                            <h2>
+                                <span><sup>R$</sup></span>
+                                <%= product.price %>
+                            </h2>
+                        </div>
+                        
+                         <!--- Display WhatsApp Button --->
+                         <div class="whats">
+                            <a href="https://api.whatsapp.com/send?phone=15551234567" 
+                            class="btn"
+                            ><i class="fab fa-whatsapp"></i>Enquire</a>
+
+                            <!--- Display Heart Button --->
+                            <button class="btn-heart">
+                                <i class="fa fa-heart"></i>
+                            </button>
+
             </div>
-
-        <!--- Get product details --->
-        <div class="row">
-        <div class="col50">
-            <h2>Description</h2>
-            <!--- Get product description from the database --->
-            <p><%= product.description %></p>
-            <br/>
-            <h2>Category</h2>
-            <!--- Get product category from the database --->
-            <p><%= product.category %></p>
         </div>
-        </div>
-
-<!--- </section> --->
-
-    </section>  
-    </container>
-    </main>
+      </div>
+</main>
 <%})%>
 
 <!---------- FOOTER ---------->

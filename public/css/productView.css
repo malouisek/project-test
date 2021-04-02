@@ -81,10 +81,10 @@ body{
 /* PRODUCT PAGE */
 
 main{
-    padding-top: 50px;
+    padding-top: 150px;
     background: white;
     padding-right:30px;
-    padding-left: 30px;
+    padding-left: 0px;
 }
 
 .wallpaper-model{
