@@ -427,19 +427,116 @@ ul{
     background-color: #666;
 }
 
-
-
 /* MEDIA QUERIES
 *Add media queries to make the website responsive for mobile, phablet and tablet view
 */
 
 /* Max-Width 991px - Tablet View*/
 @media (max-width: 991px){
+    /* ROW 1 TOP*/
+    .col-1 h1{
+        font-size: 45px;
+        margin-left: 20px;
+    }
     
+    .col-1 p{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .col-1 .btn{
+        margin-left: 20px;
+    }
+
+    .col-1 img{
+        width: 70%;
+        margin-left: 60px;
+    }
+
+    /* FEATURED PRODUCTS*/
+
+    .section-text h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .section-text p{
+        font-size: 16px;
+        margin-bottom: -80px;
+        text-align: center;
+    }
+
+    .featured{
+        width: 50%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 4%;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        margin-left: 200px;
+    }
+
+    .button-feat{
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    .work a{
+        font-size: 16px;
+    }
+
+    /* VAN GOGH BANNER */
+
+    .button-see {
+        width: 20%;
+        margin-left: 480px;
+        margin-top: 30px;
+        position: relative;
+        height: 40px;
+        width: 190px;
+    }
+
+    .image-van img{
+        width: 100%;
+    }
+
+    /* INSTAGRAM POSTS */
+
+    .section-insta{
+        margin-top: -80px;
+    }
+
+    .section-insta h2{
+        text-align: center;
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+    .section-insta p{
+        font-size: 16px;
+    }
+
+    .photos{
+        align-items: justify;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 4%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        margin-left: 220px;
+    }
+
+    /* FOOTER */
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
 }
 
-/* Max-Width 767px - Phablet View*/
-@media (max-width: 767px){
+/* Max-Width 767px - Tablet View*/
+@media screen and (max-width: 768px){
 
     /* ROW 1 TOP*/
     .col-1 h1{
@@ -532,7 +629,7 @@ ul{
         grid-gap: 4%;
         margin-top: 30px;
         margin-bottom: 100px;
-        margin-left: 150px;
+        margin-left: 170px;
     }
 
     /* FOOTER */
@@ -543,14 +640,126 @@ ul{
     }
 }
 
-/* Max-Width 500 - Mobile View*/
-@media(max-width: 500px){
-    .footer-col{
+/* Max-Width 600 - Mobile View*/
+@media(max-width: 600px){
+   /* ROW 1 TOP*/
+    .col-1 h1{
+        align-items: center;
+        font-size: 35px;
+        margin-left: 0px;
+    }
+    
+    .col-1 p{
+        align-items: center;
         width: 100%;
+        font-size: 16px;
+        margin-left: 0px;
+    
+    }
+
+    .col-1 .btn{
+        align-items: center;
+        margin-left: 0px;
     }
 
     .col-1 img{
-    display: none;
+        display: none;
+    }
+
+    /* FEATURED PRODUCTS*/
+
+    .section-text h2{
+        text-align: center;
+        font-size: 30px;
+        margin-left: 0px;
+    }
+
+    .section-text p{
+        text-align: center;
+        font-size: 16px;
+        margin-left: 30px;
+        margin-bottom: -80px;
+    }
+
+    .container .samples{
+        background-color: none;
+        align-items: center;
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .featured{
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 5%;
+        margin-bottom: -20px;
+        margin-left: 25px;
+    }
+
+     .work img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .work a{
+        font-size: 16px;
+    }
+
+    .button-feat{
+        width: 60%;
+        margin-top: 210px;
+        margin-bottom: 0px;
+    }
+
+    /* VAN GOGH BANNER */
+
+    .button-see {
+       display: none;
+    }
+
+    .image-van img{
+        display: none;
+    }
+
+    /* INSTAGRAM POSTS */
+
+    .section-insta{
+        margin-top: -40px;
+        background-color: #F2EFEF;
+    }
+
+    .section-insta h2{
+        text-align: center;
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    .section-insta p{
+        font-size: 16px;
+    }
+
+    .photos{
+        width: 40%;
+        align-items: center;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-gap: 10%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+
+    .post img{
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* FOOTER */
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
     }
 }
 
