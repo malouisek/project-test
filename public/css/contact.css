@@ -47,6 +47,7 @@ a{
     font-size: 13px;
     background-color: white;
     margin-bottom: 0px;
+    box-shadow: 0 1px 10px #C9C8C3;
 }
 
 .breadcrumbs a{
@@ -82,29 +83,38 @@ a{
 
 .contact{
     position: relative;
-    min-height: 100vh;
-    padding: 10px 120px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background:#F9F9F9;
-    /* background: url(images/5-1.jpg); */
+    background: url("https://cdn.shopify.com/s/files/1/0849/0518/products/ceplok_2ab3703a-b744-46fe-8bca-377844caa385_1200x1200.jpg?v=1569102833"); 
     background-size: cover;
-
+    opacity: 90%;
 }
 
-.contact .content{
-    max-width: 800px;
-    text-align: center;  
-}
-
-.contact .content h2{
-    font-size: 45px;
+.contactForm h1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-size: 35px;
     font-weight: 800;
-    color: black;
-    margin-bottom: -10px;
-    letter-spacing: 0px;
+    margin-left: 170px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.contactForm h2{
+    position: relative;
+    justify-content: center;
+    align-items: justify;
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .container2{
@@ -112,7 +122,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .contactInfo{
@@ -121,7 +132,6 @@ a{
     flex-direction: column;
     margin-left: 60px;
     margin-top: 50px;
-    
 }
 
 .contactInfo .box{
@@ -148,26 +158,24 @@ a{
     font-size: 15px;
     color: #555;
     flex-direction: column;
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .contactInfo .box .text h3{
     font-weight: 800;
     color: #ff523b;
+    opacity: 80%;
 }
 
 .contactForm{
-    width: 65%;
+    width: 50%;
     padding: 40px;
     background: white;
     margin-bottom: 0px;
-}
-
-.contactForm h2{
-    font-size: 24px;
-    color: #555;
-    font-weight: 500;
-    letter-spacing: 1px;
+    margin-left: 450px;
+    border-radius: 8px;
+    box-shadow: 0 0 1em #C9C8C3;
 }
 
 .contactForm .inputBox{
@@ -238,7 +246,7 @@ a{
   overflow: hidden;
   background-color: transparent;
   color: #fff;
-  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  box-shadow: 0 0 1em #888;
   transition: all 250ms linear;
   text-decoration: none;
   margin-bottom: 50px;
@@ -263,28 +271,13 @@ a{
     margin-top: -10px;
 }
 
-/* HR LINES */
-
-.hr1 {
-    height: 1px;
-    background: #F2EFEF;
-    width: 100%;
-    font-size: 3px; /* IE 6 */
-}
-  
-.hr2 {
-    height: 1px;
-    background: #D1CFCF;
-    width: 100%;
-    font-size: 3px; /* IE 6 */
-}
-
 /* CONTACT SECTION ENDS */
 
 
 /* COVID INFO */
 
 .underline:after {
+    position: absolute;
 	content: '';
 	display: block;
 	width: 4%;
@@ -319,16 +312,16 @@ a{
 .info_title {
   color: #444;
   font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0px;
+  font-size: 17px;
+  letter-spacing: 1px;
   margin-top: 30px;
 }
 
 .info p{
-  color: #444;
+  color: #555;
   font-weight: 400;
-  font-size: 18px;
-  letter-spacing: 0px;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .whatsapp-button a{
@@ -458,6 +451,15 @@ ul{
     color: #24262b;
     background-color: #666;
 }
+
+.social-links a{
+    margin-right: 5px;
+}
+
+.footer{
+    box-shadow: 0 0 1em lightgray;
+}
+
 
 
 @media screen and (max-width: 991px)

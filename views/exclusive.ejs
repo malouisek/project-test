@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>A3 Design | Online Catalog</title>
-    <link type="text/css" href="css/style.css" rel="stylesheet">
+    <link type="text/css" href="css/exclusive.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!---------- IMPORTS ---------->
     <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -18,21 +21,49 @@
 <!--- Adds navbar items such as the logo, links and login icon --->
     <%- include("partials/header"); -%>
 
-    <!---------- ROW 3 - FEATURED PRODUCTS ---------->
-    <div class="container">
-        <section id="designs" class="samples">
-            <div class="section-text">
-                <br>
-                <br>
-                <h2>Exclusive Collections</h2>
-                <p>Find out more about our exclusive wallpaper collections today</p>
-                <br>
-            </div>
-            <div class="featured">
-
-            </div>
-        </section>
+    <!---------- PRODUCTS ---------->
+   <div class="container">
+  <h1>Van Gogh</h1>
+  <h2>WALLPAPER COLLECTION</h2><br>
+    <p>This collection is an international success. Rightly so, as it is a unique collection in which the soul of the paintings is captured, including imperfections. Designed and reproduced with care, respect and love. 
+    <br>To use the words of the master himself: <br>“What is done in love is done well’.
+    </p><br><br>
+    <a href="https://www.vangoghmuseum.nl/nl"><h3>Van Gogh Museum Amsterdam</h3></a>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+        <div class="thumbnail">
+            <a href="https://www.muralswallpaper.com/app/uploads/Almond-Blossom-by-Van-Gogh-WEB-CHAIR-1-820x532-820x532.jpg" target="_blank">
+            <img src="https://www.muralswallpaper.com/app/uploads/Almond-Blossom-by-Van-Gogh-WEB-CHAIR-1-820x532-820x532.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Almond Blossom by Vincent Van Gogh Wallpaper Mural</p>
+          </div>
+        </a>
+      </div>
     </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://www.muralswallpaper.com/app/uploads/starry-night-art-room-820x532.jpg" target="_blank">
+          <img src="https://www.muralswallpaper.com/app/uploads/starry-night-art-room-820x532.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Starry Night by Vincent Van Gogh Wallpaper Mural</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="https://www.muralswallpaper.com/app/uploads/sunflowers-van-gogh-art-room-820x532.jpg" target="_blank">
+          <img src="https://www.muralswallpaper.com/app/uploads/sunflowers-van-gogh-art-room-820x532.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Sunflowers by Vincent Van Gogh Wallpaper Mural</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
 
 <!---------- FOOTER ---------->
 <%- include("partials/footer"); -%>

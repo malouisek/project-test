@@ -24,6 +24,7 @@ body{
     padding-left: 35px;
     padding-right: 45px;
     margin-top: 3px;
+    box-shadow: 0 0 6px lightgray;
 }
 
 .navbar a.active {
@@ -47,6 +48,7 @@ body{
     padding-left: 70px;
     padding-top: 10px;
     font-size: 13px;
+    margin-bottom: 10px;
 }
 
 .breadcrumbs__item{
@@ -56,12 +58,12 @@ body{
 .breadcrumbs__item:not(:last-of-type)::after{
     content: '>';
     margin: 0 8px;
-    color: #666;
+    color: #555;
 }
 
 .breadcrumbs__link{
     text-decoration: none;
-    color: darkgrey;
+    color: #555;
 }
 
 .breadcrumbs__link:hover{
@@ -73,8 +75,8 @@ body{
     font-weight: 500;
 }
 
-
 /* ROW 3 - PRODUCTS*/
+
 
 form.example{
     margin-top: 20px;
@@ -83,11 +85,12 @@ form.example{
 form.example input[type=text] {
   padding: 10px;
   font-size: 13px;
-  border: 1px solid white;
+  border: 1px solid lightgray;
   float: right;
   width: 80%;
   background: #E8E8E8;
   border-radius: 4px;
+  box-shadow: 0 0 5px #C9C8C3;
 }
 
 .fa-search{
@@ -104,7 +107,6 @@ form.example button {
   border: none;
 }
 
-
 form.example::after {
   content: "";
   clear: both;
@@ -120,11 +122,10 @@ form.example::after {
 .section-top h2{
     text-align: center;
     font-weight: 800;
-    font-size: 35px;
-    color: black;
-    margin-top: -30px;
+    font-size: 45px;
+    color:#111;
+    margin-top: -40px;
 }
-
 
 .section-top p{
     margin-top: 10px; 
@@ -132,6 +133,7 @@ form.example::after {
     font-size: 15px;
     font-weight: 400;
     color: #333;
+    letter-spacing: 1px;
 }
 
 .section-text h1{
@@ -160,6 +162,12 @@ form.example::after {
 .work {
     width: 100%;
     color: black;
+}
+
+.work:hover{
+    box-shadow: 0 5px 10px #C9C8C3;
+    margin-top: 0px;
+    margin-bottom: 40px;
 }
 
 .work a {
@@ -284,7 +292,13 @@ ul{
     background-color: #666;
 }
 
+.social-links a{
+    margin-right: 5px;
+}
 
+.footer{
+    box-shadow: 0 0 1em lightgray;
+}
 
 
 

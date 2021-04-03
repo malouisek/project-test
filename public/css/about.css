@@ -10,15 +10,6 @@ body{
     flex-direction: column;
 }
 
-/* HR LINES */
-
-.hr1 {
-    height: 1px;
-    background: #F2EFEF;
-    width: 100%;
-    font-size: 3px; /* IE 6 */
-}
-
 /* NAVIGATION BAR STARTS */
 .navbar a{
     text-decoration: none;
@@ -59,6 +50,7 @@ body{
     font-size: 13px;
     background-color: white;
     padding-bottom: 10px;
+    box-shadow: 0 0 6px #C9C8C3;
 }
 
 .breadcrumbs__item{
@@ -104,9 +96,16 @@ section{
     width: 48%;
 }
 
+.row .col50 p{
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
 .titleText{
     color: #111;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 800;
 }
 
@@ -125,8 +124,6 @@ section{
     height: 100%;
     object-fit: cover;
 }
-
-
 
 /* IMAGE GALLERY */
 
@@ -150,8 +147,6 @@ section{
   float: right;
   width: 25%;
 }
-
-
 
 /* The Modal (background) */
 .modal {
@@ -283,6 +278,7 @@ img.image-hover {
     color: #555;
     overflow: hidden;
     background-color: #F9F9F9;
+    box-shadow: 0 0 1em lightgray;
 }
 
 .team-section h1{
@@ -321,7 +317,7 @@ img.image-hover {
 }
 
 .pe:hover{
-    background: #C9C8C3;
+    background: lightgray;
 }
 
 .pe img{
@@ -451,6 +447,15 @@ ul{
     color: #24262b;
     background-color: #666;
 }
+
+.footer{
+    box-shadow: 0 0 1em lightgray;
+}
+
+.social-links a{
+    margin-right: 5px;
+}
+
 
 
 

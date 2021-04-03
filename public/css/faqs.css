@@ -47,8 +47,9 @@ body{
     padding-left: 70px;
     padding-top: 10px;
     font-size: 13px;
-    background-color: #F2EFEF;
+    background-color: white;
     padding-bottom: 10px;
+    box-shadow: 0 0 6px #C9C8C3;
 }
 
 .breadcrumbs__item{
@@ -139,7 +140,6 @@ body{
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-
 }
 */
 
@@ -173,26 +173,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-/*
-.col-1 .btn{
-    display: inline-block;
-    padding: 1rem 3rem;
-    margin: 30px 0;
-    margin-top: -30px;
-    margin-left: 520px;
-    margin-bottom: 60px;
-    border-radius: 0px;
-    background: #ff523b;
-    color: #fff;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    transition: background 0.5s;
-    text-align: center;
-    text-decoration-line: none;
-}
-*/
 
 .whats{
     margin-top: 20px;
@@ -232,13 +212,13 @@ body{
   text-decoration: none;
   margin-bottom: 50px;
   background-color: #ff523b;
+  box-shadow: 0 0 6px #888;
 }
 
 .btn:hover{
   box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
   background-color: #563434;
 }
-
 
 /* FOOTER */
 
@@ -322,6 +302,14 @@ ul{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: #666;
+}
+
+.social-links a{
+    margin-right: 5px;
+}
+
+.footer{
+    box-shadow: 0 0 1em lightgray;
 }
 
 

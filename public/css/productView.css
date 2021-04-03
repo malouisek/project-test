@@ -10,7 +10,6 @@ body{
     flex-direction: column;
 }
 
-
 /* NAVIGATION BAR */
 .navbar a{
     text-decoration: none;
@@ -50,8 +49,9 @@ body{
     padding-left: 70px;
     padding-top: 10px;
     font-size: 13px;
-    background-color: #F2EFEF;
+    background-color: white;
     padding-bottom: 10px;
+    box-shadow: 0 0 6px #C9C8C3;
 }
 
 .breadcrumbs__item{
@@ -105,7 +105,7 @@ main{
 
 .preview img{
     position: relative;
-    left: 160px;
+    left: 100px;
     top: -90px;
     width: 450px;
     height: 420px;
@@ -181,7 +181,7 @@ main{
   overflow: hidden;
   background-color: transparent;
   color: #fff;
-  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  box-shadow: 0 0 1em lightgray;
   transition: all 250ms linear;
   text-decoration: none;
   margin-bottom: 50px;
@@ -220,7 +220,7 @@ main{
   cursor: pointer;
   overflow: hidden;
   background-color: transparent;
-  box-shadow: 0 6px 15px 0 rgba(16,39,112,.15);
+  box-shadow: 0 0 1em lightgray;
   transition: all 250ms linear;
   background-color: white;
 }
@@ -320,6 +320,14 @@ ul{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: #666;
+}
+
+.footer{
+    box-shadow: 0 0 1em lightgray;
+}
+
+.social-links a{
+    margin-right: 5px;
 }
 
 @media(max-width: 767px){

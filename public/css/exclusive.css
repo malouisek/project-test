@@ -5,19 +5,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* TESTE */
-
-
-
-/* NAVIGATION BAR */
-
+/* NAVIGATION BAR STARTS */
 a{
     text-decoration: none;
     color: #555;
     font-size: 16px;
 }
 
+.navbar li a{
+    color: #666;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -26,6 +23,7 @@ a{
     padding-left: 35px;
     padding-right: 45px;
     margin-top: 3px;
+    box-shadow: 0 0 6px #C9C8C3;
 }
 
 .navbar a.active {
@@ -35,12 +33,96 @@ a{
 }
 
 .navbar nav{
-    flex: 1;   
+    flex: 1;
 }
 
 .navbar nav li{
     display: inline-block;
     margin-right: 30px;
+}
+
+
+/* BREADCRUMBS */
+
+.breadcrumbs{
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 13px;
+    background-color: white;
+    margin-bottom: 0px;
+}
+
+.breadcrumbs a{
+    font-size: 13px;
+}
+
+.breadcrumbs__item{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after{
+    content: '>';
+    margin: 0 8px;
+    color: #555;
+}
+
+.breadcrumbs__link{
+    text-decoration: none;
+    color: #555;
+}
+
+.breadcrumbs__link:hover{
+    text-decoration: underline;
+}
+
+.breadcrumbs__link--active{
+    color: #ff523b;
+    font-weight: 500;
+}
+
+/* VAN GOGH COLLECTION*/
+
+.container h1{
+    font-size: 65px;
+    font-weight: 800;
+    margin-left: 400px;
+    color: #111;
+}
+
+.container h2{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 440px;
+    margin-top: -1px;
+    color: #555;
+    letter-spacing: 4px;
+}
+
+.container p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 0px;
+    margin-top: 0px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.container h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 0px;
+    margin-top: -30px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.row p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 1px;
 }
 
 /* FOOTER*/
@@ -126,27 +208,4 @@ ul{
     color: #24262b;
     background-color: #666;
 }
-
-@media(max-width: 767px){
-    .footer-col{
-        width: 50%;
-        padding: 0 15px;
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 574px){
-    .footer-col{
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
 
