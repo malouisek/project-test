@@ -54,22 +54,23 @@
         <section id="designs" class="samples">
             <div class="section-top">
                 <!--- Adding some space --->
-                <br>
-                <br>
+                <br><br>
                 <h2>Wallpaper</h2>
                 <p>Here at A3 Design, you can find your favourite products and purchase them through WhatsApp.
                 <br>Select a product, view the details and press the Enquire button to speak to a consultant today.
                 </p>
                 <br>
             </div>
+            
             <div class="section-text">
-                
                 <h1>20 items</h1>
                 
                 <!-- Search FORM !"£!"£!"£"!£!""    -->
                 <form class="example" id="formId" style="margin-left: 875px; max-width:300px">
                     <!-- <h6></h6> -->
+                    
                     <input type="text" placeholder="Search by capital letter.." name="category" id="category">
+                   
 
                     <button id="searchBox" onclick="setLink()"><i class="fa fa-search"></i></button>
                     <script>
@@ -80,25 +81,20 @@
                                 link = "/products";
                             } else {
 
-
                                 link = "/actionProduct/" + document.getElementById("category").value;
                                 window.location.href = link;
                             }
                         }
-
                         document.getElementById("formId").addEventListener("click", function (event) {
                             event.preventDefault()
                         });
                     </script>
-
-
                 </form>
             </div>
 
             <!--- Request the server to get product information from the database --->
             <div class="featured">
                 <%productsList.forEach(product => {%>
-
 
                 <div class="work">
                     <a href="/product-productView?id=<%= product._id %>">
@@ -107,9 +103,10 @@
                         <a href="<%= product.id %>"><img src="<%= product.image %>" alt=""></a>
                          <!--- Add product name and price --->
                         <figcaption>
-                            <a href="<%= product.id %>"><%= product.name %></a>
+
+                            <a href="<%= product.id %>"><h2><%= product.name %></h2></a>
                             <br>
-                            <a href="<%= product.id %>"><%= product.price %></a>
+                            <a href="<%= product.id %>"><h3><%= product.price %></h3></a>
                         </figcaption>
                         <div class="rating">
                         <!--- Add star rating for each product --->

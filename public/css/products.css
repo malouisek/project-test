@@ -84,29 +84,26 @@ form.example input[type=text] {
   padding: 10px;
   font-size: 13px;
   border: 1px solid white;
-  float: left;
+  float: right;
   width: 80%;
   background: #E8E8E8;
   border-radius: 4px;
 }
 
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #ff523b;
-  color: white;
-  font-size: 13px;
-  border: 1px solid white;
-  border-radius: 4px;
-  cursor: pointer;
-  opacity: 90%;
+.fa-search{
+    margin-left: 260px;
+    color: #333;
 }
 
-form.example button:hover {
-  background: #999;
-  opacity: 90%;
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: transparent;
+  font-size: 13px;
+  border: none;
 }
+
 
 form.example::after {
   content: "";
@@ -128,22 +125,11 @@ form.example::after {
     margin-top: -30px;
 }
 
-.underline:after {
-	content: '';
-	display: block;
-	width: 4%;
-	height: 3.5px;
-    background-color: #ff523b;
-    align-items: center;
-    margin-top: 1px;
-    margin-left: 600px;
-    border-radius: 2px;
-}
 
 .section-top p{
     margin-top: 10px; 
     line-height: 1.9em;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     color: #333;
 }
@@ -176,18 +162,21 @@ form.example::after {
     color: black;
 }
 
-.work a{
-    width: 100%;
-    color: #555;
-    font-weight: 300;
-    font-size: 15px;
+.work a {
     text-decoration-line: none;
 }
 
-.work p{
-    width: 100%;
+.work h2{
     color: #555;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 16px;
+    
+}
+
+.work h3{
+    margin-top: -20px;
+    color: #555;
+    font-weight: 600;
     font-size: 15px;
 }
 

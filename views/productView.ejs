@@ -63,7 +63,6 @@
         <!--- Get product image --->
         <img src="<%= product.image %>" class="img-fluid" id="preview" width="450px" alt="">
         </div>
-
     </div>
 
                     <div class="display">
@@ -94,10 +93,7 @@
 
                         <!--- Display price --->
                         <div class="price">
-                            <h2>
-                                <span><sup>R$</sup></span>
-                                <%= product.price %>
-                            </h2>
+                            <h2><%= product.price %></h2>
                         </div>
                         
                          <!--- Display WhatsApp Button --->
