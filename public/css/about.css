@@ -305,7 +305,10 @@ img.image-hover {
 }
 
 .team-section h2{
-    visibility: hidden;
+    color: #333;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .pe{
@@ -337,7 +340,7 @@ img.image-hover {
 }
 
 .p-des{
-    color: #333;
+    color: #ff523b;
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 16px;
