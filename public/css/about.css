@@ -399,6 +399,116 @@ img.image-hover {
     line-height: 30px;
 }
 
+
+/* TESTIMONIALS STARTS*/
+
+.team-test{
+    background: white;
+    text-align: center;
+}
+
+.team-test .inner-width{
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+    color: #555;
+    overflow: hidden;
+    background-color: white;
+    /*box-shadow: 0 0 1em lightgray;*/
+}
+
+.team-test h1{
+    font-size: 35px;
+    font-weight: 800;
+    display: inline-block;
+    padding-bottom: 40px 0;
+    padding-top: 20px 0;
+    color:black;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.team-test .underline:after {
+	content: '';
+	display: block;
+	width: 8%;
+	height: 3.5px;
+    background-color: #ff523b;
+    align-items: center;
+    margin-top: 1px;
+    margin-left: 0px;
+    border-radius: 2px;
+}
+
+.team-test h2{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #ff523b;
+}
+
+.team-test h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.team-test h4{
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    color: #222;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+
+
+.team-test .pe{
+    float: left;
+    width: calc(100% / 3);
+    overflow: hidden;
+    padding: 40px 0;
+    transition: 00.4s;
+    margin-top: 50px;
+}
+
+.team-test .pe:hover{
+    background: none;
+}
+
+.team-test .pe img{
+    width: 130px;
+    height: 130px;
+    border-radius: 180px;
+}
+
+.team-test .p-name{
+    margin: 10px ;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.team-test .p-des{
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: -8px;
+    padding: 10px;
+}
+
+
+
+
+
+
 /* FOOTER*/
 
 .container-footer{
