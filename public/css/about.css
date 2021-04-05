@@ -278,12 +278,13 @@ img.image-hover {
     padding: 40px;
     color: #555;
     overflow: hidden;
-    background-color: #F9F9F9;
-    box-shadow: 0 0 1em lightgray;
+    background-color:rgb(247, 247, 247);
+    backdrop-filter: blur(30px);
+   
 }
 
 .team-section h1{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 800;
     display: inline-block;
     padding-bottom: 40px 0;
@@ -311,22 +312,49 @@ img.image-hover {
     letter-spacing: 1px;
 }
 
+.team-section p{
+    color:#ff523b;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
 .pe{
+    position: relative;
     float: left;
-    width: calc(100% / 3);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    height: 40%;
+    background-color: rgb(243, 243, 243);
     overflow: hidden;
-    padding: 40px 0;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
     transition: 00.4s;
-    margin-top: -20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    align-items: center;
+    border-radius: 40px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 1em rgb(190, 190, 190);
 }
 
 .pe:hover{
     background: lightgray;
 }
 
+.p-sm i:hover{
+    color: #ff523b;
+}
+
 .pe img{
-    width: 230px;
-    height: 230px;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
     border-radius: 180px;
 }
 
@@ -340,11 +368,11 @@ img.image-hover {
 }
 
 .p-des{
-    color: #ff523b;
+    color: black;
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 16px;
-    margin-top: -8px;
+    margin-top: 0px;
 }
 
 .p-sm{
@@ -376,7 +404,7 @@ img.image-hover {
     text-align: center;
 }
 
-.team-test .inner-width{
+.inner{
     width: 100%;
     margin: auto;
     padding: 40px;
@@ -394,19 +422,7 @@ img.image-hover {
     padding-top: 20px 0;
     color:black;
     letter-spacing: 1px;
-    margin-top: 10px;
-}
-
-.team-test .underline:after {
-	content: '';
-	display: block;
-	width: 8%;
-	height: 3.5px;
-    background-color: #ff523b;
-    align-items: center;
-    margin-top: 1px;
-    margin-left: 0px;
-    border-radius: 2px;
+    margin-top: -40px;
 }
 
 .team-test h2{
@@ -414,6 +430,7 @@ img.image-hover {
     font-weight: 500;
     letter-spacing: 2px;
     color: #ff523b;
+    margin-bottom: -20px;
 }
 
 .team-test h3{
@@ -421,7 +438,7 @@ img.image-hover {
     font-weight: 500;
     color: #333;
     letter-spacing: 1px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .team-test h4{
@@ -430,13 +447,17 @@ img.image-hover {
     display: inline-block;
     color: #222;
     letter-spacing: 2px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
+.review img{
+    width: 12%;
+    margin-top: -30px;
+}
 
-.team-test .pe{
+.opinion {
     float: left;
     width: calc(100% / 3);
     overflow: hidden;
@@ -445,11 +466,11 @@ img.image-hover {
     margin-top: 50px;
 }
 
-.team-test .pe:hover{
+.team-test .opinion:hover{
     background: none;
 }
 
-.team-test .pe img{
+.team-test .opinion img{
     width: 130px;
     height: 130px;
     border-radius: 180px;
