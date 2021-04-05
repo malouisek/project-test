@@ -5,18 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* TESTE */
-
-
-
 /* NAVIGATION BAR */
-
-a{
-    text-decoration: none;
-    color: #555;
-    font-size: 16px;
-}
 
 .navbar{
     display: flex;
@@ -26,6 +15,7 @@ a{
     padding-left: 35px;
     padding-right: 45px;
     margin-top: 3px;
+    box-shadow: 0 0 6px lightgray;
 }
 
 .navbar a.active {
@@ -41,6 +31,121 @@ a{
 .navbar nav li{
     display: inline-block;
     margin-right: 30px;
+}
+
+.navbar nav li a{
+   color: #555;
+   text-decoration: none;
+   font-size: 16px;
+}
+
+.navbar nav li a:hover{
+   color: #ff523b;
+   font-weight: 600;
+}
+
+/* LOGIN */
+
+.text-center{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+.form-container {
+  background: #f1f1f1;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0px 6px #999;
+}
+
+.login-btn a{
+    font-size: 16px;
+    position: relative;
+    font-weight: 600;
+    height: 48px;
+    border-radius: 4px;
+    width: 210px;
+    letter-spacing: 1px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    color: #fff;
+    transition: all 250ms linear;
+    text-decoration: none;
+    margin-bottom: 40px;
+    background-color: #ff523b;
+    box-shadow: 0 0 1em #999;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.sign-up{
+    width: 50%;
+    margin-left: 180px;
+}
+
+.sign-up h1{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.sign-up h1 a{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(21, 142, 255);
+}
+
+form h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 250px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.login-social h1{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 210px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.login-social .gmail{
+    margin-left: 215px;
+    margin-top: 50px;
+}
+
+.login-social .gmail:hover{
+    box-shadow: 0 10px 6px #999;
+}
+
+.login-social .facebook{
+    margin-left: 15px;
+    margin-top: 50px;
+}
+
+.login-social .facebook:hover{
+    box-shadow: 0 10px 6px #999;
 }
 
 /* FOOTER*/
@@ -125,6 +230,14 @@ ul{
 .footer-col .social-links a:hover{
     color: #24262b;
     background-color: #666;
+}
+
+.social-links a{
+    margin-right: 5px;
+}
+
+.footer{
+    box-shadow: 0 0 1em lightgray;
 }
 
 @media(max-width: 767px){

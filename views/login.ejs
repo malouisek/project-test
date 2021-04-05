@@ -11,6 +11,8 @@
     <!---------- IMPORTS ---------->
     <!--- Adding icons such as WhatsApp, Facebook and Instagram pages --->
     <script src="https://kit.fontawesome.com/9ffe78eb03.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
 </head>
 <body>
     
@@ -19,19 +21,70 @@
     <div class="navbar">
         <a href="index" class="logo"><img src="images/logo.png" width="125px"></a>
             <nav>
-                <li><a class="active" href="index">Home</a> </li>
+                <li><a href="index">Home</a> </li>
                 <li><a href="products">Products</a> </li>
                 <li><a href="about">About</a> </li>
                 <li><a href="contact">Contact</a> </li>
             </nav>
-        <a href="login">
+        <a href="login" class="nav-login">
         <img src="images/usernew.svg" width="54px" height="22px"> 
         </a>
     </div> 
     
 <!---------- LOGIN PAGE ---------->  
+<div class="container">
+    <div class="row">
+       <div class="col-md-6 offset-md-3 form-container">
+           
+        <h3 class="text-center">Sign In</h3>
+          <form method="post" action="/login">
 
-    
+            <!---------- Input box to get user`s email ----------> 
+            <!---------- If the user doesn`t type an email, a message will pop up on the screen ---------->
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required="required" 
+                class="form-control"
+                placeholder="Email"
+              />
+            </div>
+
+            <!---------- Input box to get user`s password ---------->
+            <div class="form-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required="required"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+
+            <!--- Display Login Button --->
+                <div class="login-btn">
+                    <a href="" class="btn">Login</a>
+                </div>
+
+                <!---------- Display Sign up option ---------->
+                <div class="sign-up">
+                    <h1>No account? <a href="login">Create one!</a></h1>
+                </div>
+                <h4>OR</h4>
+
+                <!---------- Display Sign in options with Google and Facebook ---------->
+                 <div class="login-social">
+                    <h1>Login in with</h1>
+                    <a href="https://www.google.com/gmail/" class="gmail"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Gmail_Icon.svg/768px-Gmail_Icon.svg.png" width="40px"></a>
+                    <a href="https://www.facebook.com/" class="facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/384px-Facebook_icon.svg.png" width="40px"></a>
+                </div>
+          </form>
+        </div>
+    </div>
+</div>
     
 <!---------- FOOTER ---------->
     <%- include("partials/footer"); -%>
