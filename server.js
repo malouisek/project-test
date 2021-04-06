@@ -22,9 +22,10 @@ const productsSchema = {
     price: String
 }
 
+//Get schema
 const Product = mongoose.model('Product', productsSchema);
 
-//getting all results in product and rendering
+//Getting all results in product and rendering
 app.get('/', (req, res) => {
     Product.find({}, function (err, products) {
         res.render('index')
@@ -62,7 +63,7 @@ app.get('/actionProduct/:category', (req, res) => {
     })
 })
 
-//Render pages
+//Render each page of the application
 app.get('/about', (req, res) => {
     res.render('about');
 })
