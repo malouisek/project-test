@@ -11,19 +11,19 @@ The is a full stack Web application using Node.js, MongoDB, Express, JavaScript,
 
 To run this application, follow these steps:
 
-# Download the project 
+### Download the project 
 
-# Open your terminal
+### Open your terminal
 
-# Install the packages
+### Install the packages
 npm i
 
-# Run the project
+### Run the project
 npm run
 
-# Run the server
+### Run the server
 npm start
 
-# View application
+### View application
 click on the pop up on the left to open the browser window
 
