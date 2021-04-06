@@ -361,7 +361,7 @@ ul{
     }
 }
 
-/* Max-Width 600 - Mobile View*/
+/* Max-Width 600 - Small devices (phones 600px and down*/
 @media screen and (max-width: 600px){
     
     .breadcrumbs{

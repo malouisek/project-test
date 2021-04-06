@@ -44,7 +44,50 @@
    font-weight: 600;
 }
 
+/* BREADCRUMBS */
+
+.breadcrumbs{
+    padding-left: 70px;
+    padding-top: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs__item{
+    display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after{
+    content: '>';
+    margin: 0 8px;
+    color: #555;
+}
+
+.breadcrumbs__link{
+    text-decoration: none;
+    color: #555;
+}
+
+.breadcrumbs__link:hover{
+    text-decoration: underline;
+}
+
+.breadcrumbs__link--active{
+    color: #ff523b;
+    font-weight: 500;
+}
+
 /* LOGIN */
+
+.form-container {
+  background: #f1f1f1;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0px 6px #999;
+}
 
 .text-center{
     font-size: 35px;
@@ -56,14 +99,11 @@
     padding-bottom: 10px;
 }
 
-.form-container {
-  background: #f1f1f1;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  border-radius: 10px;
-  box-shadow: 0 0px 6px #999;
+.forgot-pass h1{
+    font-size: 13px;
+    font-weight: 500;
+    float: right;
+    margin-top: -15px;
 }
 
 .login-btn a{
@@ -95,7 +135,7 @@
     background-color: #ff523b;
     box-shadow: 0 0 1em #999;
     margin-left: 160px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .sign-up{
@@ -254,7 +294,52 @@ ul{
     }
 }
 
+/* Max-Width 600 - Small devices (phones 600px and down*/
+@media screen and (max-width: 600px){
+    
+    .breadcrumbs{
+        padding-left: 10px;
+    }
 
+    .form-container {
+        margin-top: 10px;
+    }
+        
+    .text-center{
+        font-size: 30px;
+        margin-bottom: 40px;
+        margin-top: -40px;
+    }
+
+    .login-btn a{
+        position: relative;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+
+    .sign-up{
+        width: 100%;
+        margin-left: 55px;
+        margin-top: -10px;
+    }
+
+    form h4{
+        margin-left: 130px;
+    }
+
+    .login-social h1{
+        margin-left: 95px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .login-social .gmail{
+        margin-left: 98px;
+        margin-top: 50px;
+    }
+
+
+}
 
 
 
