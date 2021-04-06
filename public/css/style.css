@@ -450,9 +450,9 @@ ul{
     margin-right: 5px;
 }
 
-/* MEDIA QUERIES
-*Add media queries to make the website responsive for mobile, phablet and tablet view
-*/
+
+/* MEDIA QUERIES */
+
 
 /* Max-Width 991px - Tablet View*/
 @media (max-width: 991px){
@@ -663,8 +663,15 @@ ul{
     }
 }
 
-/* Max-Width 600 - Mobile View*/
+/* Max-Width 600 - Small devices (phones 600px and down*/
 @media screen and (max-width: 600px){
+
+    /* NAVBAR AND BREADCRUMBS */
+    .navbar{
+        padding-left: 1px;
+        margin-top: 3px;
+    }
+
    /* ROW 1 TOP*/
     .col-1 h1{
         align-items: center;
@@ -779,10 +786,9 @@ ul{
     }
 
     /* FOOTER */
+    
     .footer-col{
-        width: 50%;
-        padding: 0 15px;
-        margin-bottom: 30px;
+        width: 100%;
     }
 }
 

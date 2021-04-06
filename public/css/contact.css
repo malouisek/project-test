@@ -228,59 +228,19 @@ a{
     opacity: 80%;
 }
 
-.whats{
-    margin-top: 20px;
+.find-store{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.btn{
-  position: relative;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 2;
-  height: 48px;
-  border-radius: 4px;
-  width: 210px;
-  letter-spacing: 1px;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  background-color: transparent;
-  color: #fff;
-  box-shadow: 0 0 1em #888;
-  transition: all 250ms linear;
-  text-decoration: none;
-  margin-bottom: 50px;
-  background-color: #ff523b;
-}
-
-.btn i {
-  padding-right: 7px;
-  font-size: 20px;
-}
-
-.btn:hover{
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
-  background-color: #563434;
-}
-
-.whatsapp-button{
-   margin-top: 10px;
-}
-
-.opening p{
-    margin-top: -10px;
+.map{
+    display:flex;
+    position: relative;
+    /*min-height: 100vh; */
+    width: 55%;
+    display: flex;
+    margin-left: 520px;
+    margin-top: -410px;
 }
 
 /* COVID INFO SECTION*/
@@ -348,32 +308,59 @@ a{
   color: #ff523b;
 }
 
-/* MAP SECTION STARTS */
-
-.map{
-    display:flex;
-    position: relative;
-    /*min-height: 100vh; */
-    width: 55%;
-    display: flex;
-    margin-left: 520px;
-    margin-top: -400px;
+.whats{
+    margin-top: 20px;
 }
 
-.find-store{
-    margin-top: -50px;
-    margin-bottom: 50px;
+.btn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2;
+  height: 48px;
+  border-radius: 4px;
+  width: 210px;
+  letter-spacing: 1px;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: 0 0 1em #888;
+  transition: all 250ms linear;
+  text-decoration: none;
+  margin-bottom: 50px;
+  background-color: #ff523b;
 }
 
-.find-store h2{
-    position: relative;
-    max-width: 1800px;
-    text-align: center;
-    padding-top: 40px;
-    font-size: 22px;
-    font-weight: 500;
-    color: #333;
-    letter-spacing: 2px;
+.btn i {
+  padding-right: 7px;
+  font-size: 20px;
+}
+
+.btn:hover{
+  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
+  background-color: #563434;
+}
+
+.whatsapp-button{
+   margin-top: 10px;
+}
+
+.opening p{
+    margin-top: -10px;
 }
 
 /* FOOTER*/
@@ -470,6 +457,10 @@ ul{
 
 
 
+/* MEDIA QUERIES */
+
+
+
 @media screen and (max-width: 991px)
 {
     .contact{
@@ -517,15 +508,17 @@ ul{
 /* Max-Width 600 - Small devices (phones 600px and down*/
 @media screen and (max-width: 600px){
     
-    .navbar a{
-        float:none;
-        width: 100%;
+    /* NAVBAR AND BREADCRUMBS */
+    .navbar{
+        padding-left: 1px;
+        margin-top: 3px;
     }
 
     .breadcrumbs{
         padding-left: 20px;
     }
 
+    /* CONTACT FORM */
     .contact{
         position: relative;
         width: 100%;
@@ -557,37 +550,22 @@ ul{
         margin-left: 15px;
     }
    
+    /* MAPS AND CONTACT DETAILS*/
+
     .contactInfo{
         width: 100%;
-        margin-left: 0px;
-    }
-
-    .contactInfo .box{
-        position: relative;
-        padding: 20px 0;
-        display: flex;
-        padding-top: -20px;
+        margin-left: 10px;
     }
 
     .contactInfo .box .icon{
-        min-width: 60px;
-        height: 60px;
-        background:#F2EFEF;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        font-size: 22px;
+        min-width: 40px;
+        height: 40px;
+        font-size: 15px;
     }
 
     .contactInfo .box .text{
-        display: flex;
-        margin-left: 20px;
-        font-size: 15px;
-        color: #555;
-        flex-direction: column;
-        font-weight: 400;
-        letter-spacing: 1px;
+        margin-left: 5px;
+        font-size: 11px;
     }
 
     .contactInfo .box .text h3{
@@ -596,15 +574,70 @@ ul{
         opacity: 80%;
     }
 
+    .find-store{
+        margin-top: -30px;
+        margin-bottom: 450px;
+}
 
+    .map{
+        display:flex;
+        position: relative;
+        width: 55%;
+        display: flex;
+        margin-left: 10px;
+        margin-top: -430px;
+    }
 
+    /* COVID INFO*/
 
+    .underline:after {
+        width: 15%;
+        height: 3px;
+        background-color: #ff523b;
+        margin-left: 115px;
+        margin-top: 6px;
+    }
+   
+    .info {
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
+    .info h1{
+        width: 100%;
+        font-size: 25px;
+    }
 
+    .info_title {
+        font-size: 15px;
+        margin-top: 30px;
+    }
 
+    .info p{
+        font-size: 15px;
+        margin-left: -10px;
+    }
 
+    .whatsapp-button a{
+        font-size: 22px;
+    }
 
+    .btn{
+        font-size: 14px;
+        height: 48px;
+        border-radius: 4px;
+        width: 200px;
+        background-color: #ff523b;
+        margin-bottom: 50px;
+        margin-left: -15px;
+    }
+
+   /* FOOTER */
+    
     .footer-col{
         width: 100%;
+        margin-bottom: 20px;
     }
 }

@@ -227,3 +227,39 @@ ul{
 .footer{
     box-shadow: 0 0 1em lightgray;
 }
+
+
+/* MEDIA QUERIES */
+
+
+/* Max-Width 600 - Small devices (phones 600px and down*/
+@media screen and (max-width: 600px){
+    
+    /* NAVBAR AND BREADCRUMBS */
+    .navbar{
+        padding-left: 1px;
+        margin-top: 3px;
+    }
+
+    .breadcrumbs{
+        padding-left: 20px;
+        padding-top: 0px;
+    }
+
+    .container h1{
+        font-size: 30px;
+        margin-left: 60px;
+    }
+
+    .container h2{
+        font-size: 11px;
+        margin-left: 35px;
+    }
+
+    /* FOOTER */
+    
+    .footer-col{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

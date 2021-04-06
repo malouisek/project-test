@@ -139,15 +139,6 @@ body{
     display: flex !important;
     justify-content: space-between !important;
 }
-/*
-.rotate{
-    transition: 0.6s;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-}
-*/
 
 /* QUESTIONS */
 
@@ -319,21 +310,13 @@ ul{
 }
 
 
-@media(max-width: 574px){
-    .footer-col{
-        width: 100%;
-    }
-}
 
-@media (max-width: 767px){
-    html, body{
-        overflow-x: hidden !important;
-    }
+@media screen and (max-width: 767px){
+   
+    /* .container-2{
+     MAKE IT RESPONSIVE
+    }*/
 
-    body{
-        margin: 0px !important;
-        align-items: center;
-    }
 
     .accordion{
         width: 100%;
@@ -346,30 +329,89 @@ ul{
     .col-1 .btn{
         width: 90%;
     }
-}
 
-
-@media (max-width: 767px){
-    /* .container-2{
-     MAKE IT RESPONSIVE
-    }*/
-
-.whats{
+    .whats{
     margin-top: 20px;
 }
 
-.btn{
-    margin: 30px 0;
-    margin-top: -30px;
-    margin-left: 270px;
-    margin-bottom: 60px;
-    position: relative;
+    .btn{
+        margin: 30px 0;
+        margin-top: -30px;
+        margin-left: 270px;
+        margin-bottom: 60px;
+        position: relative;
     }
 
- .footer-col{
+    .footer-col{
         width: 50%;
         padding: 0 15px;
         margin-bottom: 30px;
+    }
+}
+
+/* Max-Width 600 - Small devices (phones 600px and down*/
+@media screen and (max-width: 600px){
+    
+    /* NAVBAR AND BREADCRUMBS */
+    .navbar{
+        padding-left: 1px;
+        margin-top: 3px;
+    }
+
+    .breadcrumbs{
+        padding-left: 20px;
+    }
+
+    /* FAQ */
+  
+    .question h2{
+         width: 80%;
+        font-size: 25px;
+        margin-left: 45px;
+        margin-top: 15px;
+    }
+
+    .accordion{
+        margin: 0 auto;
+        padding: 64px;
+        width: 100%;
+    }
+
+    /* QUESTIONS */
+
+    .container-2{
+        width: 100%;
+    }
+
+    .query h2{
+        font-size: 25px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        margin-left: 40px;
+    }
+
+    .how-text{
+        font-size: 13px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    .whats{
+        margin-top: 20px;
+    }
+
+    .btn{
+    font-size: 14px;
+    height: 48px;
+    width: 190px;
+    margin-bottom: 40px;
+    margin-top: -30px;
+    margin-left: 60px;
+    }
+
+     .footer-col{
+        width: 100%;
     }
 
 }

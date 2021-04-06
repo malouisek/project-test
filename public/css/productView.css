@@ -341,12 +341,20 @@ ul{
     }
 }
 
-/* Max-Width 600 - Mobile View*/
+/* Max-Width 600 - Small devices (phones 600px and down*/
 @media screen and (max-width: 600px){
+
+    /* NAVBAR AND BREADCRUMBS */
+    .navbar{
+        padding-left: 1px;
+        margin-top: 3px;
+    }
 
     .breadcrumbs{
         padding-left: 20px;
     }
+
+    /* PRODUCT DETAILS */
 
     .display{
         background-color:white;
@@ -437,5 +445,7 @@ ul{
         font-size: 20px;
     }
 
-    
+    .footer-col{
+        width: 100%;
+    }
 }

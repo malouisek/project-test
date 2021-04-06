@@ -297,10 +297,17 @@ ul{
 /* Max-Width 600 - Small devices (phones 600px and down*/
 @media screen and (max-width: 600px){
     
+    /* NAVBAR AND BREADCRUMBS */
+    .navbar{
+        padding-left: 1px;
+        margin-top: 3px;
+    }
+
     .breadcrumbs{
         padding-left: 10px;
     }
 
+    /* LOGIN FORM */
     .form-container {
         margin-top: 10px;
     }

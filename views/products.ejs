@@ -18,6 +18,8 @@
 <!---------- NAVIGATION BAR ---------->
 <!--- Adds navbar items such as the logo, links and login icon --->
 
+<!---------- DESKTOP VIEW ---------->
+
 <body>
     <div class="navbar">
         <a href="index" class="logo"><img src="images/logo.png" width="125px"></a>
@@ -31,6 +33,40 @@
             <img src="images/usernew.svg" width="54px" height="22px">
         </a>
     </div>
+
+
+<!---------- MOBILE VIEW ---------->
+<!-- Simulate a smartphone / tablet -->
+
+    <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+    <a href="#home" class="active">A3 Design</a>
+    <div id="myLinks">
+        <a href="index">Home</a>
+        <a href="products">Products</a>
+        <a href="about">About</a>
+        <a href="contact">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <!-- End smartphone / tablet look -->
+    </div>
+
+    <!-- Whenever the button is hit, show the links -->
+    <script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+    }
+    </script>
 
     <!---------- BREADCRUMBS ---------->
     <!--- Breadcrumbs will guide the user by showing the hierarchy of the website on the top of the page --->
@@ -69,6 +105,8 @@
                     <input type="text" placeholder="Search by capital letter.." name="category" id="category">
                    
                     <button id="searchBox" onclick="setLink()"><i class="fa fa-search"></i></button>
+                    
+                    <!---------- Find the element from the database ---------->
                     <script>
 
                         function setLink() {
