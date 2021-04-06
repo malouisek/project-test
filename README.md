@@ -1,7 +1,7 @@
 # Research Project
 
-Student Name: Marcelle Louise de Souza
-Student ID: 19534
+Marcelle Louise de Souza
+ID: 19534
 
 
 Project Summary
