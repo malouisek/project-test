@@ -179,14 +179,15 @@
 .work a{
     width: 100%;
     color: #555;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
+    text-decoration: none;
 }
 
 .work p{
     width: 100%;
     color: #555;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 15px;
 }
 
