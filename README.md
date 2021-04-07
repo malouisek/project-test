@@ -25,7 +25,7 @@ npm i
 ### Run the project
 npm run
 
-### Run the server
+### Start the server
 npm start
 
 ### View application
