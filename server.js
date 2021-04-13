@@ -97,6 +97,6 @@ app.get('/', function (req, res) {
 });
 
 //Echo message so we know the server is working fine
-app.listen(8000, function () {
+app.listen(process.env.PORT, function () {
     console.log('server is running');
 })
