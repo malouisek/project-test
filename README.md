@@ -11,6 +11,7 @@ Project Summary
 
 The is a full stack Web application using Node.js, MongoDB, Express, JavaScript, CSS and EJS(HTML). This app starts a server and listens to port 8000 for connections. The app makes a connection with MongoDB to get the details from its database and display on the website.
 
+To see the running application, you can click on this link: https://stormy-thicket-64702.herokuapp.com/index
 
 
 To run this application, follow these steps:
